@@ -48,13 +48,13 @@ Chapter 2 Geography
 Section 2.1 The House
 
 Porch is a room. "The porche is not very large but has a very beautiful garden. The main door leads inside the house".  
-Hall is room.  "You are in an empty hall. There is a stair that leads to the second door. You can see open doors on south and east, leading to other rooms."
+Hall is room.  "You are in an empty hall. There is a stair that leads to the second door. You can see doors on north and east, leading to other rooms."
 
 Main door is a door. It is north of Porch and south of Hall. Main door is closed and locked.
 The matching key of the Main door is Main key.
 
-Living Room is a room. "The living room is huge and clean, but it doesn't seem to have too much things". Living room is north of Hall.
-Garage is a room. "The Garage has a huge box with tools, but nothing else seems interesting to you.". Garage is west of Living Room.
+Living Room is a room. "The living room is huge and clean. There are some pictures on the wall showing a very serious and not friendly family: the mom, the dad and their little girl. The three of them seem to be very rich and unpleased.". Living room is north of Hall.
+Garage is a room. "The Garage seems not being used regularly". Garage is west of Living Room.
 Kitchen is a room. "The kitchen has 3 balconies very clean, one fridge and one oven." .  Kitchen is north of garage.
 Dining Room is a room. Dining room is east of kitchen. Dining Room is north of Living Room.
 Home Office is a room."In the Home Office you can see a desk and some books on shelves." Home Office is east of Living Room.
@@ -88,8 +88,15 @@ bucket is in Porch.
 
 Section 3.2 On the Hall
 
-Max is a person. "Max, who is a very thin and midium-aged man dressed as a buttler, is standing in front of you. As soon as he sees you, he says 'Hello and welcome, sir, we've missed you' ".
+Max is a person. "Max, who is a very thin and midium-aged man dressed as a buttler, is standing in front of you. As soon as he sees you, he says 'Hello and welcome, sir".
 Max is in Hall.
+
+Section 3.3 On the Living Room
+
+The red couch is a chair. It is in the Living Room. 
+The center table is a supporter. "The center table is in front of the couch". The table is in the Living Room.
+The vase is a container. The vase is on the center table.
+The flower is a thing. "a very beautiful red flower, which is not dead yet". The flower is in the vase.
 
 Chapter 4 What Happens when entering
 
@@ -106,9 +113,8 @@ Being Inside the House is a Scene.
 Being Inside the House begins when player is in First Floor.
 Being Inside the House ends when player is in Second Floor.
 
-After asking the Max about "him", say "Max just answers you with 'Yes, we've missed you'".
-After asking the Max about "house", say "Max answers 'This is your house, sir. I'm sure you are familiar to it'".
-After asking the Max about "me", say "Max looks at you with concern. He says 'I believe you should rest sir, you don't seem well. The bedroom is upstairs'".	
+After asking the Max about "him", say "I am Max and I work here for mister and misters Whinehouse".
+After asking the Max about "house", say "This is the house of mister and misters Whinehouse. Since I am no longer alive, I believe I can't prevent you from entering. So, feel free to look around".
 	
 	
 	
