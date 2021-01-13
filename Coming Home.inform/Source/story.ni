@@ -1,5 +1,7 @@
 "Coming Home" by Geraldo
 
+Include Conversation Framework by Eric Eve.
+
 Chapter 1 New Kinds
 
 Section 1.1 The Staircase
@@ -30,18 +32,6 @@ Carry out sitting on a chair:
 
 Report sitting on a chair:
 	say "You feel confortable".
-	
-Section 1.3 Kill
-
-Understand the command "kill" as something new.
-Killing is an action applying to a thing.
-Understand "kill [something]" as killing.
-
-Instead of killing Max:
-	say "Are you quite sure you want to kill Max? ";
-	if the player consents:
-		say "Now Max is dead".
-
 
 Chapter 2 Geography
 
@@ -88,33 +78,50 @@ bucket is in Porch.
 
 Section 3.2 On the Hall
 
-Max is a person. "Max, who is a very thin and midium-aged man dressed as a buttler, is standing in front of you. As soon as he sees you, he says 'Hello and welcome, sir".
+Max is a person. "Max, who is a very thin and midium-aged man dressed as a buttler, is standing in front of you. He stares at you with a smile.".
 Max is in Hall.
 
 Section 3.3 On the Living Room
 
-The red couch is a chair. It is in the Living Room. 
-The center table is a supporter. "The center table is in front of the couch". The table is in the Living Room.
+The red couch is a fixed in place chair. It is in the Living Room. 
+The center table is a fixed in place supporter. "The center table is in front of the couch". The table is in the Living Room.
 The vase is a container. The vase is on the center table.
 The flower is a thing. "a very beautiful red flower, which is not dead yet". The flower is in the vase.
 
-Chapter 4 What Happens when entering
+Chapter 4 Dialogs
+
+Section 4.1 Max
+
+After saying hello to max, say "'Hello, hum, friend', you say, a little confused with the presence of someone in that abandoned house.
+
+'Hello and welcome, sir', he answers, still smiling. How he could be so calm?."
+
+After quizzing Max about Max: 
+	say "'Humm... who are you my friend?', you ask.
+	
+	'I am Max and I work here for mister and misters Whinehouse', Max answers.".
+After asking Max about "the house":
+	say "'What do you know about this house?', you ask.
+
+	'This is the house of mister and misters Whinehouse. Since I am no longer alive, I believe I can't prevent you from entering. So, feel free to look around', he answers, looking at you with a suspicious smile.".
+	
+Instead of asking Max about "house", try asking Max about "the house".
+
+Chapter 5 What Happens when entering
 
 Being Outside the House is a Scene. 
 Being Outside the House begins when play begins.
-Being Outside the House ends when player is in  Hall.
+Being Outside the House ends when player is in Hall.
 
 Before taking the Main Key during Being Outside the House:
 	Say "A chill runs up your spine".
 
-Chapter 5 Inside the house
+Chapter 6 Inside the house
 
 Being Inside the House is a Scene.
 Being Inside the House begins when player is in First Floor.
 Being Inside the House ends when player is in Second Floor.
+	
 
-After asking the Max about "him", say "I am Max and I work here for mister and misters Whinehouse".
-After asking the Max about "house", say "This is the house of mister and misters Whinehouse. Since I am no longer alive, I believe I can't prevent you from entering. So, feel free to look around".
-	
-	
+
 	
