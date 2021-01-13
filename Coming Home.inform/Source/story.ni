@@ -101,11 +101,30 @@ After quizzing Max about Max:
 	
 	'I am Max and I work here for mister and misters Whinehouse', Max answers.".
 After asking Max about "the house":
-	say "'What do you know about this house?', you ask.
+	say "'What do you know about this house? Is this your house?', you ask.
 
 	'This is the house of mister and misters Whinehouse. Since I am no longer alive, I believe I can't prevent you from entering. So, feel free to look around', he answers, looking at you with a suspicious smile.".
 	
 Instead of asking Max about "house", try asking Max about "the house".
+
+After asking Max about "treasure", say "'Do you know where could be a treasure in this house?', you ask. 
+
+He stares at you and he, for the first time, is not smiling anymore.
+'I suggest you go away, sir. This house is under my responsability and I certainly will not allow you to take anything.', he answers."
+
+Instead of asking Max about "the treasure", try asking Max about "treasure".
+
+After asking Max about "dead", say "'Are you really dead?', you ask.
+
+'Yes, I've died a long time ago. Don't ask me how, because I can't remember', he answer.".
+Instead of asking Max about "his dead", try asking Max about "dead".
+
+The block giving rule is not listed in the check giving it to rules
+
+Check an actor giving a thing to Max:
+	if the noun is the flower, say "Max smile and accept the flower. He put it in his pocket and then say: 'Its a beautiful flower, thank you.'";
+	if the noun is not the flower, say "Max doesn't seem interested." instead.
+	
 
 Chapter 5 What Happens when entering
 
