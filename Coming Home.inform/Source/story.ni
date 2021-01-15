@@ -88,6 +88,27 @@ A sink is in every bathroom.
 A toilet is in every bathroom.
 A cabinet is in every bathroom.
 
+Section 1.5 Garage
+
+garage is a dark room. The light switch is a switched off device in the garage. It is fixed in place.
+
+After deciding the scope of the player when the location is the garage:
+	place the light switch in scope.
+
+Carry out switching off the light switch: now the garage is dark.
+
+Carry out switching on the light switch: now the garage is lighted.
+
+Understand "flip [something switched off]" as switching on. Understand "flip [something switched on]" as switching off. Understand "flip [something]" as switching on.
+
+A tool box is a transparent locked container. The tool box is in garage.
+
+Understand "box" as a tool box.
+
+hammer is a thing. screw is a thing. screwdriver is a thing.
+hammer, screw, screwdriver are in the tool box.
+
+
 Chapter 2 Geography
 
 Section 2.1 The House
@@ -201,7 +222,6 @@ Chapter 6 Inside the house
 Being Inside the House is a Scene.
 Being Inside the House begins when player is in First Floor.
 Being Inside the House ends when player is in Second Floor.
-	
 
 
 	
