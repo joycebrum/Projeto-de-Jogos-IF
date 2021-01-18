@@ -4,16 +4,15 @@ Include Conversation Framework by Eric Eve.
 
 Chapter 1 New Kinds
 
+Inclusion relates a thing (called X) to a thing (called Y) when Y is part of X. The verb to include means the inclusion relation.
+
 Section 1.1 The Staircase
 
 A staircase is a kind of door. A staircase is usually open. A staircase is seldom openable. A staircase is scenery.
 Instead of climbing a staircase: 
     try entering the noun. 
 
-Section 1.2 Chairs
-
-A chair is a kind of supporter that is enterable with carrying capacity 1. 
-Definition: A chair is occupied if something is on it.
+Section 1.2 Sitting
 
 Understand the command "sit" as something new.
 Sitting on is an action applying to one thing.
@@ -27,21 +26,25 @@ Check an actor sitting on a thing:
 Check an actor entering a thing:
 	If the thing is occupied, say "You can't sit in a occupied chair" instead;
 
+Section 1.3 Chairs
+
+A chair is a kind of supporter that is enterable with carrying capacity 1. 
+Definition: A chair is occupied if something is on it.
+
 Carry out sitting on a chair:
 	silently try entering the noun.
 
 Report sitting on a chair:
 	say "You feel confortable".
+
 	
-Section 1.3 Kitchens
+Section 1.4 Kitchens
 
 A kitchen is a kind of room.
 
 A refrigerator is a kind of container. A refrigerator is usually closed and openable. A refrigerator is usually fixed in place. A refrigerator is usually scenery. Understand "fridge" as refrigerator.
 
 A freezer compartment is a kind of container. A freezer compartment is usually closed and openable. A freezer compartment is part of every refrigerator.
-
-Inclusion relates a thing (called X) to a thing (called Y) when Y is part of X. The verb to include means the inclusion relation.
 
 A stove is a kind of supporter. It is usually scenery.
 An oven is a kind of container. An oven is usually openable and closed. One oven is a part of every stove.
@@ -76,7 +79,7 @@ A refrigerator is in every kitchen.
 A sink is in every kitchen.
 A stove is in every kitchen.
 
-Section 1.4 Bathrooms
+Section 1.5 Bathrooms
 
 A bathroom is a kind of room.
 
@@ -88,7 +91,7 @@ A sink is in every bathroom.
 A toilet is in every bathroom.
 A cabinet is in every bathroom.
 
-Section 1.5 Garage
+Section 1.6 Garage
 
 garage is a dark room. The light switch is a switched off device in the garage. It is fixed in place.
 
@@ -108,7 +111,7 @@ Understand "box" as a tool box.
 hammer is a thing. screw is a thing. screwdriver is a thing.
 hammer, screw, screwdriver are in the tool box.
 
-Section 1.6 Home Office
+Section 1.7 Home Office
 
 Home Office is a room.
 
@@ -124,6 +127,22 @@ The shelf is a scenery supporter in the Home Office. On the
 shelf are a book, a dvd, and can full of coins.
 
 There is a chair in the Home Office.
+
+Section 1.8 - Bedroom
+
+A bedroom is a kind of room.
+
+Section 1.8.1- Bed 
+
+A  bed is a kind of supporter. A bed is enterable and scenery with carrying capacity 2.
+
+A bed is in every bedroom.
+
+Section 1.8.2 - wardrobe
+
+A wardrobe is a kind of container. A wardrobe is usually closed and openable. A wardrobe is usually fixed in place.
+
+A drawer is a kind of container. A drawer is usually closed and openable.
 
 Chapter 2 Geography
 
@@ -144,8 +163,14 @@ Lavabo is a bathroom. "The Lavabo is a very small toilet and it seems that it is
 
 It has a cabinet with a sink right on the left of the door and a toilet on the other side.". Lavabo is east of Hall.
 Stairs is a staircase. It is above Hall and below Upper Hall.
-Upper Hall is a room.  
-Large Bedroom is a room. "This seems to be the bed room of the owner of the house. There is some pictures on the wall and, for su." Large Bedroom is north of Upper Hall.
+
+[Segundo andar] 
+Upper Hall is a room. "You can see a door in every direction, and in one corner you can see the stairs down to the Hall.
+
+In the corner betwen the north and east door, you can see a litlle corner table, with a lampshade and a container with dead flowers.". 
+Large Bedroom is a bedroom. "This seems to be the bedroom of the owner of the house. There is some pictures on the wall and a red carpet in the center of the room. 
+
+The bed is a double bed and is very large.". Large Bedroom is north of Upper Hall.
 Medium Bedroom is a room.  Medium Bedroom is east of Upper Hall.
 Small Bedroom is a room. Small Bedroom is west of Upper Hall.
 Upper Bathroom is a bathroom."The upper bathroom is large and fancy. The cabinet on the right side of the door seems to be made with quality wood. There is a sink on the cabinet and, on the left side, there is a toilet. On the oposite wall, there is a white bathtub.". Upper Bathroom is south of Upper Hall.
@@ -185,6 +210,19 @@ Section 3.4 On the Upper Bathroom
 
 The inner bathtub is a bath. The inner bathtub is in Inner Bathroom.
 The white bathtub is a bath. The white bathtub is in Upper Bathroom.
+
+Section 3.5 - Large Bedroom
+
+The parents wardrobe is a wardrobe. "The wardrobe is open, and you can see a lot of clothes on the ground, seens like someone took everything with hurry.
+
+The wardrobe has a drawer.". The parents wardrobe is in large bedroom. The parents wardrobe is open.
+
+The parents drawer is a drawer. The parents drawer is part of parents wardrobe.
+After opening the parents drawer, say "You see inside the drawer a broken picture frame with a photo of A young girl".
+
+Section 3.6 - Upper Hall
+
+
 
 Chapter 4 Dialogs
 
