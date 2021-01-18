@@ -112,8 +112,8 @@ Section 1.6 Home Office
 
 Home Office is a room.
 
-The table is a fixed in place supporter. The table is in the Home Office.
-The computer is a switched off device. The computer is on the table.
+The office table is a fixed in place supporter. The office table is in the Home Office.
+The computer is a switched off device. The computer is on the office table.
 
 Understand "turn on [something switched off]" as switching on. Understand "turn off  [something switched on]" as switching off.
 
