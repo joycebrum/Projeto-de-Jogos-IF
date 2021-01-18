@@ -108,6 +108,22 @@ Understand "box" as a tool box.
 hammer is a thing. screw is a thing. screwdriver is a thing.
 hammer, screw, screwdriver are in the tool box.
 
+Section 1.6 Home Office
+
+Home Office is a room.
+
+The table is a fixed in place supporter. The table is in the Home Office.
+The computer is a switched off device. The computer is on the table.
+
+Understand "turn on [something switched off]" as switching on. Understand "turn off  [something switched on]" as switching off.
+
+After switching on the computer: 
+    say "Teste" 
+
+The shelf is a scenery supporter in the Home Office. On the 
+shelf are a book, a dvd, and can full of coins.
+
+There is a chair in the Home Office.
 
 Chapter 2 Geography
 
