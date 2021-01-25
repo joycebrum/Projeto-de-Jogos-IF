@@ -171,7 +171,9 @@ In the corner betwen the north and east door, you can see a litlle corner table,
 Large Bedroom is a bedroom. "This seems to be the bedroom of the owner of the house. There is some pictures on the wall and a red carpet in the center of the room. 
 
 The bed is a double bed and is very large.". Large Bedroom is north of Upper Hall.
-Medium Bedroom is a room.  Medium Bedroom is east of Upper Hall.
+Medium Bedroom is a a bedroom."This room looks like a guest room, but is empty, just with the basic furniture.
+
+The bed doesn't have a mattress.".  Medium Bedroom is east of Upper Hall.
 Small Bedroom is a room. Small Bedroom is west of Upper Hall.
 Upper Bathroom is a bathroom."The upper bathroom is large and fancy. The cabinet on the right side of the door seems to be made with quality wood. There is a sink on the cabinet and, on the left side, there is a toilet. On the oposite wall, there is a white bathtub.". Upper Bathroom is south of Upper Hall.
 Inner Bathroom is a bathroom. "It is a small bathroom, just with a toilet and a cabinet with a simple sink on it. It is not very fancy, but it is still very organized. Next to the cabinet there is a bathtub". Inner Bathroom is west of Large Bedroom.
@@ -180,7 +182,6 @@ Second Floor is a region. The Upper Hall, The Large Bedroom, the medium bedroom,
 
 Chapter 3 Things
 
-Player is in Porch.  
 Main key is in the old box.
 
 Section 3.1 On the Porch
@@ -218,11 +219,11 @@ The parents wardrobe is a wardrobe. "The wardrobe is open, and you can see a lot
 The wardrobe has a drawer.". The parents wardrobe is in large bedroom. The parents wardrobe is open.
 
 The parents drawer is a drawer. The parents drawer is part of parents wardrobe.
-After opening the parents drawer, say "You see inside the drawer a broken picture frame with a photo of A young girl".
+After opening the parents drawer, say "You see inside the drawer a broken picture frame with a photo of a young girl".
 
-Section 3.6 - Upper Hall
+Section 3.7 - Medium Bedroom
 
-
+The woden wardrobe is a wardrobe. The woden wardrobe is in medium bedroom. The woden wardrobe is open.
 
 Chapter 4 Dialogs
 
@@ -277,5 +278,8 @@ Being Inside the House is a Scene.
 Being Inside the House begins when player is in First Floor.
 Being Inside the House ends when player is in Second Floor.
 
+chapter 7 - Inicio
+
+Player is in upper hall.  
 
 	
