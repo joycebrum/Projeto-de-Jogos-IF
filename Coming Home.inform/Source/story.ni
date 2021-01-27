@@ -144,6 +144,22 @@ A wardrobe is a kind of container. A wardrobe is usually closed and openable. A 
 
 A drawer is a kind of container. A drawer is usually closed and openable.
 
+Section 1.9 - Dining Room
+
+Dining room is a room.
+
+The dining table is a fixed in place supporter. The dining table is in the Dining room.
+The vase is a container. dead flowers are in the vase. The vase is on the dining table.
+
+The bar is a fixed in place supporter. The bar is in the Dining room.
+The bottle of wine, bottle of scotch whisky  and a bottle of vodka is a container. 
+grape juice is in the bottle of wine.
+The bottle of wine, bottle of scotch whisky  and a bottle of vodka is on the bar.
+There are four glasses on the table.
+There are four plates on the table.
+
+There are four chairs in the Dining room.
+
 Chapter 2 Geography
 
 Section 2.1 The House
