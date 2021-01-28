@@ -113,20 +113,13 @@ hammer, screw, screwdriver are in the tool box.
 
 Section 1.7 Home Office
 
-Home Office is a room.
+A book is a kind of thing. It has some text called printing.
 
-The office table is a fixed in place supporter. The office table is in the Home Office.
-The computer is a switched off device. The computer is on the office table.
+Understand the command read as something new. Reading is an action applying to a thing. Understand "read [something]" as reading.
 
-Understand "turn on [something switched off]" as switching on. Understand "turn off  [something switched on]" as switching off.
-
-After switching on the computer: 
-    say "Teste" 
-
-The shelf is a scenery supporter in the Home Office. On the 
-shelf are a book, a dvd, and can full of coins.
-
-There is a chair in the Home Office.
+Check reading:
+	if the noun is a book, say "[printing][line break]";
+	Else say "You can't read this.".
 
 Section 1.8 - Bedroom
 
@@ -149,7 +142,7 @@ Section 1.9 - Dining Room
 Dining room is a room.
 
 The dining table is a fixed in place supporter. The dining table is in the Dining room.
-The vase is a container. dead flowers are in the vase. The vase is on the dining table.
+The pot is a container. dead flowers are in the pot. The pot is on the dining table.
 
 The bar is a fixed in place supporter. The bar is in the Dining room.
 The bottle of wine, bottle of scotch whisky  and a bottle of vodka is a container. 
@@ -174,7 +167,7 @@ Living Room is a room. "The living room is huge and clean. There are some pictur
 Garage is a room. "The Garage seems not being used regularly". Garage is west of Living Room.
 Main Kitchen is a kitchen. "The main kitchen has one cabinet with a sink and one refrigerator, and, on the opposite wall, a counter and one stove" .  Main Kitchen is north of garage.
 Dining Room is a room. Dining room is east of Main Kitchen. Dining Room is north of Living Room.
-Home Office is a room."In the Home Office you can see a desk and some books on shelves." Home Office is east of Living Room.
+Home Office is a room."In the Home Office you can see a desk and a bookshelf. There is also a computer on the desk." Home Office is east of Living Room.
 Lavabo is a bathroom. "The Lavabo is a very small toilet and it seems that it is not being used for decades.
 
 It has a cabinet with a sink right on the left of the door and a toilet on the other side.". Lavabo is east of Hall.
@@ -241,6 +234,28 @@ Section 3.7 - Medium Bedroom
 
 The woden wardrobe is a wardrobe. The woden wardrobe is in medium bedroom. The woden wardrobe is open.
 
+Section 3.8 - Home Office
+
+The office table is a fixed in place supporter. It is scenery. The office table is in the Home Office.
+The computer is a switched off device. It is scenery. The computer is on the office table.
+
+Understand "turn on [something switched off]" as switching on. Understand "turn off  [something switched on]" as switching off.
+
+After switching on the computer: 
+    	say "When you turn the computer on, a message is displaying, saying:[line break][line break]    'Honey, don't forget to put the third book on the shelf in the lavabo. - John'".
+
+The shelf is a supporter in the Home Office. It is scenery.
+book 1 is on the shelf. The description is "A recipe book". It is a book with printing "You read instructions on how to bake a cake.".
+book 2 is on the shelf. The description is "A parenting book.". It is a book with printing "You read about how to take care of a children.".
+book 3 is on the shelf. The description is "Margareth's diary". It is a book with printing "'... she is our daughter, but this is the only way to save her. I am going to put the poison on her food, and she won't even feel anything. I wish there was another w...'[line break]The rest is blurred by what looks like water drops.".
+book 4 is on the shelf. The description is "A detective book". It is a book with printing "You read the story of a detective solving a crime.".
+book 5 is on the shelf. The description is "A psychology book.". It is a book with printing "You read about clinical depression.".
+
+On the shelf is a dvd.
+On the shelf is a can full of coins.
+
+There is a chair in the Home Office. It is scenery.
+
 Chapter 4 Dialogs
 
 Section 4.1 Max
@@ -296,6 +311,4 @@ Being Inside the House ends when player is in Second Floor.
 
 chapter 7 - Inicio
 
-Player is in upper hall.  
-
-	
+Player is in the Porch
