@@ -131,6 +131,14 @@ A  bed is a kind of supporter. A bed is enterable and scenery with carrying capa
 
 A bed is in every bedroom.
 
+Definition: A bed is occupied if something is on it.
+
+Carry out sitting on a bed:
+	silently try entering the noun.
+
+Report sitting on a bed:
+	say "You feel confortable".
+
 Section 1.8.2 - wardrobe
 
 A wardrobe is a kind of container. A wardrobe is usually closed and openable. A wardrobe is usually fixed in place.
