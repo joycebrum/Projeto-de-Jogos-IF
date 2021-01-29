@@ -242,6 +242,10 @@ Section 3.7 - Medium Bedroom
 
 The woden wardrobe is a wardrobe. The woden wardrobe is in medium bedroom. The woden wardrobe is open.
 
+Section 3.8 - Small Bedroom
+
+Carlie is a person. "Carlie, a little girl, is sitted on the bed looking at you. She looked very happy to see you". Carlie is in the small bedroom.
+
 Section 3.8 - Home Office
 
 The office table is a fixed in place supporter. It is scenery. The office table is in the Home Office.
@@ -249,8 +253,12 @@ The computer is a switched off device. It is scenery. The computer is on the off
 
 Understand "turn on [something switched off]" as switching on. Understand "turn off  [something switched on]" as switching off.
 
+Computer Note Seen is a truth state that varies.
+Third Book Seen is a truth state that varies.
+
 After switching on the computer: 
-    	say "When you turn the computer on, a message is displaying, saying:[line break][line break]    'Honey, don't forget to put the third book on the shelf in the lavabo. - John'".
+    	say "When you turn the computer on, a message is displaying, saying:[line break][line break]    'Honey, don't forget to put the third book on the shelf in the lavabo. - John'";
+	now Computer Note Seen is true.
 
 The shelf is a supporter in the Home Office. It is scenery.
 book 1 is on the shelf. The description is "A recipe book". It is a book with printing "You read instructions on how to bake a cake.".
@@ -259,6 +267,9 @@ book 3 is on the shelf. The description is "Margareth's diary". It is a book wit
 book 4 is on the shelf. The description is "A detective book". It is a book with printing "You read the story of a detective solving a crime.".
 book 5 is on the shelf. The description is "A psychology book.". It is a book with printing "You read about clinical depression.".
 
+Carry out reading book 3:
+	now Third Book Seen is true.
+	
 On the shelf is a dvd.
 On the shelf is a can full of coins.
 
@@ -267,6 +278,8 @@ There is a chair in the Home Office. It is scenery.
 Chapter 4 Dialogs
 
 Section 4.1 Max
+
+Max Approval is a truth state that varies.
 
 After saying hello to max, say "'Hello, friend', you say.
 
@@ -292,8 +305,33 @@ Instead of asking Max about "the treasure", try asking Max about "treasure".
 
 After asking Max about "dead", say "'Are you really dead?', you ask.
 
-'Yes, I've died a long time ago. Don't ask me how, because I can't remember', he answer.".
+'Yes, I've died a long time ago. Don't ask me how, because I can't remember', he answer, but he doesn't seem being honest.".
 Instead of asking Max about "his dead", try asking Max about "dead".
+
+After quizzing Max about the computer:
+	if Computer Note Seen is true, say "'Do you know about that note on the computer?', you ask.
+
+	'The note? No, I don't know about any note. I can't go in the home office, the Mr, and Mrs Whinehouse don't allow me to.', he answers.";
+	if Computer Note Seen is false, say "'That computer still works?',  you ask.
+
+	'Have you tried to turn it on?', he answers with a smile."
+
+After informing Max about the book 3:
+	say "'Listen, Max. I saw the Mrs. Whinehouse's diary and she tried to kill her own daughter with poison. I don't know why, but she seemed to believe that this was the only way'
+
+	Max looked at you with disbelif.
+
+	'That can't be true... she's loved little miss Whinehosue. Of course that miss Whinehouse was sick and she had little time to live, but she couldn't have done this. It was me. I'm sure that I used something spoiled and...', he answers.
+
+	'It wouldn't be enough. Just spoiled food wouldn't kill you both. She did it to miss Whinehouse. But how it killed you?', you intervenied.
+
+	'I always tried the food before give it to miss Whinehouse, to know if it is too salty or sweet. That was enough to kill me, what it seems. Thank you, my friend. You can't imagine how much weight you just take off my back', he answers with relief";
+	now Max Approval is true.
+	
+After quizzing Max about Carlie, say "'That little girl upstairs... do you know her?', you ask.
+
+	'Ah, little miss Whinehouse... she is so sweet and lovely. How could I be so displiscent... If I was more careful, she wouldn't be dead now.... forget about it, it is just an old man regreting his past.', he answers";
+
 
 The block giving rule is not listed in the check giving it to rules
 
@@ -319,4 +357,4 @@ Being Inside the House ends when player is in Second Floor.
 
 chapter 7 - Inicio
 
-Player is in the Porch
+Player is in the Porch.
