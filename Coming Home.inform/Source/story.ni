@@ -244,9 +244,35 @@ The woden wardrobe is a wardrobe. The woden wardrobe is in medium bedroom. The w
 
 Section 3.8 - Small Bedroom
 
+Carlie Approval is a truth state that varies.
+
 Carlie is a person. "Carlie, a little girl, is sitted on the bed looking at you. She looked very happy to see you". Carlie is in the small bedroom.
 
-Section 3.8 - Home Office
+After saying hello to Carlie, say "'Hello little girl.', you say.
+
+	'Hello! I am Carlie! I'm so happy that now I have someone to play with'.".
+
+After quizzing Carlie about Carlie, say "'Who are you? Did you live here?', you ask.
+
+'Ah, yeah, this is my house. Mama and Papa are not at home but I can take care of the house by myself. I am Carlie Whinehouse', she answers proudly.".
+
+After asking Carlie about "treasure", say "'Do you know where could be a treasure in this house?', you ask. 
+
+	'Treasure? Ah, I have a treasure. Marly, my little doll is so beautiful and funny. She is perfect, just like a treasure. But...', her eyes filled with water. She was about to cry 'I don't know where Marly is. She is my favourite doll and... and... I lost her'."
+
+After asking Carlie about "dead":
+	say "'Are you dead?', you ask.
+
+	She stares at you and, suddenly, she starts to cry. You try to confort her but she just keeps repeating 'I'm not dead. I'm not a ghost. Mama... Papa...'.
+	
+	Just as sudden as she started to cry, she looks at you and say: 'YOU ARE THE ONE WHO ARE DEAD NOW'.
+
+	She runs into you and everything become dark.";
+	end the story saying "You have died".
+Instead of asking Carlie about "her death", try asking Carlie about "dead".
+Instead of asking Carlie about "death", try asking Carlie about "dead".
+
+Section 3.9 - Home Office
 
 The office table is a fixed in place supporter. It is scenery. The office table is in the Home Office.
 The computer is a switched off device. It is scenery. The computer is on the office table.
