@@ -186,8 +186,17 @@ Check burning an unlighting thing with something (this is the burn only things n
 	if the player encloses the noun, stop the action.
 
 Carry out burning something with something (this is the simplistic burning rule):
-	if the noun is not a lighting object, now the noun is nowhere;
-	if the noun is a lighting thing, now the noun is lit.
+	if the noun is a lighting thing, now the noun is lit;
+	if the noun is not a lighting thing: 
+		now the noun is nowhere;
+		say "'You have no respect with this house sir', you hear a voice saying in your back.
+
+		Max is very close to you and he seems very angry.
+
+		'I'm afraid I can't no longer allow you to stay', he says.
+
+		Then everything become darkness.";
+		end the story saying "You have died".
 
 Report burning something with something:
 	if the noun is an unlighting thing, say "You burn up [the noun].";
@@ -365,10 +374,10 @@ Max is in Hall.
 
 Section 3.3 On the Living Room
 
-The red couch is a fixed in place chair. It is in the Living Room. 
-The center table is a fixed in place supporter. "The center table is in front of the couch". The table is in the Living Room.
+The red couch is a fixed in place chair. It is in the Living Room. The red couch is flammable.
+The center table is a fixed in place supporter. "The center table is in front of the couch". The center table is in the Living Room. The center table is flammable.
 The vase is a container. The vase is on the center table.
-The flower is a thing. "a very beautiful red flower, which is not dead yet". The flower is in the vase.
+The flower is a thing. "a very beautiful red flower, which is not dead yet". The flower is in the vase. The flower is flammable.
 
 Section 3.4 On the Upper Bathroom
 
@@ -418,6 +427,7 @@ book 3 is on the shelf. The description is "Margareth's diary". It is a book wit
 book 4 is on the shelf. The description is "A detective book". It is a book with printing "You read the story of a detective solving a crime.".
 book 5 is on the shelf. The description is "A psychology book.". It is a book with printing "You read about clinical depression.".
 
+The book 1, book 2, book 3, book 4, book 5, the office table are flammable.
 
 Carry out reading book 3:
 	now Third Book Seen is true.
