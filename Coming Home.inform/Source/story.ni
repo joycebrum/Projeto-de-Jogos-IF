@@ -313,7 +313,11 @@ Home office door is a door. It is east of Living Room and west of Home Office. H
 The matching key of the Home office door is Home office key.
 
 
-Garage is a room. "The Garage seems not being used regularly. There are no windows and the main door are closed. There are no car in here too.". Garage is west of Living Room.
+Garage is a room. "The Garage seems not being used regularly. There are no windows and the main door are closed. There are no car in here too.".
+
+Garage door is a door. It is west of Living Room and east of Garage. Garage door is closed and locked.
+The matching key of theGarage door is Garage key.
+
 Main Kitchen is a kitchen. "The main kitchen has one cabinet with a sink and one refrigerator, and, on the opposite wall, a counter and one stove" .  Main Kitchen is north of garage.
 Dining Room is a room. Dining room is east of Main Kitchen. Dining Room is north of Living Room.
 Lavabo is a bathroom. "The Lavabo is a very small toilet and it seems that it is not being used for decades.
@@ -341,6 +345,7 @@ Chapter 3 Things
 
 Main key is in the old box.
 Home Office key is in the bottom drawer.
+Garage key is in the can full of coins.
 
 Section 3.1 On the Porch
 
@@ -413,11 +418,17 @@ book 3 is on the shelf. The description is "Margareth's diary". It is a book wit
 book 4 is on the shelf. The description is "A detective book". It is a book with printing "You read the story of a detective solving a crime.".
 book 5 is on the shelf. The description is "A psychology book.". It is a book with printing "You read about clinical depression.".
 
+
 Carry out reading book 3:
 	now Third Book Seen is true.
 	
 On the shelf is a dvd.
-On the shelf is a can full of coins.
+
+The can full of coins is a container. A can full of coins is closed and openable.
+can full of coins is on shelf.
+
+Report taking the can full of coins:
+	say "The can seems to have something bigger than a coin inside".
 
 There is a chair in the Home Office. It is scenery.
 
@@ -558,4 +569,4 @@ Being Inside the House ends when player is in Second Floor.
 
 chapter 7 - Inicio
 
-Player is in the Upper Hall.
+Player is in the Porch.
