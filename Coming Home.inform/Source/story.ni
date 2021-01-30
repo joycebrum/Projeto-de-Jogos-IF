@@ -91,27 +91,7 @@ A sink is in every bathroom.
 A toilet is in every bathroom.
 A cabinet is in every bathroom.
 
-Section 1.6 Garage
-
-garage is a dark room. The light switch is a switched off device in the garage. It is fixed in place.
-
-After deciding the scope of the player when the location is the garage:
-	place the light switch in scope.
-
-Carry out switching off the light switch: now the garage is dark.
-
-Carry out switching on the light switch: now the garage is lighted.
-
-Understand "flip [something switched off]" as switching on. Understand "flip [something switched on]" as switching off. Understand "flip [something]" as switching on.
-
-A tool box is a transparent locked container. The tool box is in garage.
-
-Understand "box" as a tool box.
-
-hammer is a thing. screw is a thing. screwdriver is a thing.
-hammer, screw, screwdriver are in the tool box.
-
-Section 1.7 Home Office
+Section 1.6 Home Office
 
 A book is a kind of thing. It has some text called printing.
 
@@ -121,11 +101,11 @@ Check reading:
 	if the noun is a book, say "[printing][line break]";
 	Else say "You can't read this.".
 
-Section 1.8 - Bedroom
+Section 1.7 - Bedroom
 
 A bedroom is a kind of room.
 
-Section 1.8.1- Bed 
+Section 1.7.1- Bed 
 
 A  bed is a kind of supporter. A bed is enterable and scenery with carrying capacity 2.
 
@@ -139,13 +119,13 @@ Carry out sitting on a bed:
 Report sitting on a bed:
 	say "You feel confortable".
 
-Section 1.8.2 - wardrobe
+Section 1.7.2 - wardrobe
 
 A wardrobe is a kind of container. A wardrobe is usually closed and openable. A wardrobe is usually fixed in place.
 
 A drawer is a kind of container. A drawer is usually closed and openable.
 
-Section 1.9 - Dining Room
+Section 1.8 - Dining Room
 
 Dining room is a room.
 
@@ -172,7 +152,7 @@ Main door is a door. It is north of Porch and south of Hall. Main door is closed
 The matching key of the Main door is Main key.
 
 Living Room is a room. "The living room is huge and clean. There are some pictures on the wall showing a very serious and not friendly family: the mom, the dad and their little girl. The three of them seem to be very rich and unpleased.". Living room is north of Hall.
-Garage is a room. "The Garage seems not being used regularly". Garage is west of Living Room.
+Garage is a room. "The Garage seems not being used regularly and it is very dark.". Garage is west of Living Room.
 Main Kitchen is a kitchen. "The main kitchen has one cabinet with a sink and one refrigerator, and, on the opposite wall, a counter and one stove" .  Main Kitchen is north of garage.
 Dining Room is a room. Dining room is east of Main Kitchen. Dining Room is north of Living Room.
 Home Office is a room."In the Home Office you can see a desk and a bookshelf. There is also a computer on the desk." Home Office is east of Living Room.
@@ -191,7 +171,7 @@ The bed is a double bed and is very large.". Large Bedroom is north of Upper Hal
 Medium Bedroom is a a bedroom."This room looks like a guest room, but is empty, just with the basic furniture.
 
 The bed doesn't have a mattress.".  Medium Bedroom is east of Upper Hall.
-Small Bedroom is a room. Small Bedroom is west of Upper Hall.
+Small Bedroom is a room. "This seems to be the smallest bedroom of the house, just like a child bedroom. There are just a bed and a small wardrobe in here.". Small Bedroom is west of Upper Hall.
 Upper Bathroom is a bathroom."The upper bathroom is large and fancy. The cabinet on the right side of the door seems to be made with quality wood. There is a sink on the cabinet and, on the left side, there is a toilet. On the oposite wall, there is a white bathtub.". Upper Bathroom is south of Upper Hall.
 Inner Bathroom is a bathroom. "It is a small bathroom, just with a toilet and a cabinet with a simple sink on it. It is not very fancy, but it is still very organized. Next to the cabinet there is a bathtub". Inner Bathroom is west of Large Bedroom.
 First Floor is a region. The Hall, Living Room, Garage, Main Kitchen, Dining Room, Home Office and Lavabo are in First Floor.
@@ -231,7 +211,7 @@ The white bathtub is a bath. The white bathtub is in Upper Bathroom.
 
 Section 3.5 - Large Bedroom
 
-The parents wardrobe is a wardrobe. "The wardrobe is open, and you can see a lot of clothes on the ground, seens like someone took everything with hurry.
+The parents wardrobe is a wardrobe. "The wardrobe is open, and you can see a lot of clothes on the ground, seens like someone took everything in a hurry.
 
 The wardrobe has a drawer.". The parents wardrobe is in large bedroom. The parents wardrobe is open.
 
@@ -240,11 +220,13 @@ After opening the parents drawer, say "You see inside the drawer a broken pictur
 
 Section 3.7 - Medium Bedroom
 
-The woden wardrobe is a wardrobe. The woden wardrobe is in medium bedroom. The woden wardrobe is open.
+The woden wardrobe is a wardrobe. The woden wardrobe is in medium bedroom. The woden wardrobe is closed.
 
 Section 3.8 - Small Bedroom
 
 Carlie Approval is a truth state that varies.
+
+The small wardrobe is a closed wardrobe. The small wardrobe is in small bedroom.
 
 Carlie is a person. "Carlie, a little girl, is sitted on the bed looking at you. She looked very happy to see you". Carlie is in the small bedroom.
 
@@ -300,6 +282,26 @@ On the shelf is a dvd.
 On the shelf is a can full of coins.
 
 There is a chair in the Home Office. It is scenery.
+
+Section 3.10 Garage
+
+garage is a dark room. The light switch is a switched off device in the garage. It is fixed in place.
+
+After deciding the scope of the player when the location is the garage:
+	place the light switch in scope.
+
+Carry out switching off the light switch: now the garage is dark.
+
+Carry out switching on the light switch: now the garage is lighted.
+
+Understand "flip [something switched off]" as switching on. Understand "flip [something switched on]" as switching off. Understand "flip [something]" as switching on.
+
+A tool box is a transparent locked container. The tool box is in garage.
+
+Understand "box" as a tool box.
+
+hammer is a thing. screw is a thing. screwdriver is a thing.
+hammer, screw, screwdriver are in the tool box.
 
 Chapter 4 Dialogs
 
