@@ -306,10 +306,16 @@ Main door is a door. It is north of Porch and south of Hall. Main door is closed
 The matching key of the Main door is Main key.
 
 Living Room is a room. "The living room is huge and clean. There are some pictures on the wall showing a very serious and not friendly family: the mom, the dad and their little girl. The three of them seem to be very rich and unpleased.". Living room is north of Hall.
+
+Home Office is a room."In the Home Office you can see a desk and a bookshelf. There is also a computer on the desk."
+
+Home office door is a door. It is east of Living Room and west of Home Office. Home office door is closed and locked.
+The matching key of the Home office door is Home office key.
+
+
 Garage is a room. "The Garage seems not being used regularly. There are no windows and the main door are closed. There are no car in here too.". Garage is west of Living Room.
 Main Kitchen is a kitchen. "The main kitchen has one cabinet with a sink and one refrigerator, and, on the opposite wall, a counter and one stove" .  Main Kitchen is north of garage.
 Dining Room is a room. Dining room is east of Main Kitchen. Dining Room is north of Living Room.
-Home Office is a room."In the Home Office you can see a desk and a bookshelf. There is also a computer on the desk." Home Office is east of Living Room.
 Lavabo is a bathroom. "The Lavabo is a very small toilet and it seems that it is not being used for decades.
 
 It has a cabinet with a sink right on the left of the door and a toilet on the other side.". Lavabo is east of Hall.
@@ -334,6 +340,7 @@ Second Floor is a region. The Upper Hall, The Large Bedroom, the medium bedroom,
 Chapter 3 Things
 
 Main key is in the old box.
+Home Office key is in the bottom drawer.
 
 Section 3.1 On the Porch
 
@@ -367,10 +374,13 @@ Section 3.5 - Large Bedroom
 
 The parents wardrobe is a wardrobe. "The wardrobe is open, and you can see a lot of clothes on the ground, seens like someone took everything in a hurry.
 
-The wardrobe has a drawer.". The parents wardrobe is in large bedroom. The parents wardrobe is open.
+The wardrobe has two drawers.". The parents wardrobe is in large bedroom. The parents wardrobe is open.
 
-The parents drawer is a drawer. The parents drawer is part of parents wardrobe.
-After opening the parents drawer, say "You see inside the drawer a broken picture frame with a photo of a young girl".
+The top drawer is a drawer. The top drawer is part of parents wardrobe.
+The bottom drawer is a drawer. The bottom drawer is part of parents wardrobe.
+After opening the top drawer, say "You see inside the drawer a broken picture frame with a photo of a young girl".
+
+After opening the bottom drawer, say "You see inside the drawer a key".
 
 Section 3.7 - Medium Bedroom
 
@@ -514,6 +524,10 @@ After quizzing Carlie about Carlie, say "'Who are you? Did you live here?', you 
 After asking Carlie about "treasure", say "'Do you know where could be a treasure in this house?', you ask. 
 
 	'Treasure? Ah, I have a treasure. Marly, my little doll is so beautiful and funny. She is perfect, just like a treasure. But...', her eyes filled with water. She was about to cry 'I don't know where Marly is. She is my favourite doll and... and... I lost her'."
+	
+After asking Carlie about "age", say "'How old are you Carlie?', you ask.
+
+'I am 8 years old', she answer and give you a happy smile.".
 
 After asking Carlie about "dead":
 	say "'Are you dead?', you ask.
@@ -544,4 +558,4 @@ Being Inside the House ends when player is in Second Floor.
 
 chapter 7 - Inicio
 
-Player is in the Porch.
+Player is in the Upper Hall.
