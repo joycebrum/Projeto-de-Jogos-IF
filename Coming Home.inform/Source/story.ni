@@ -146,7 +146,26 @@ Understand "turn on [something switched off]" as switching on. Understand "turn 
 
 Understand "flip [something switched off]" as switching on. Understand "flip [something switched on]" as switching off. Understand "flip [something]" as switching on.
 
-Section 1.10 - Simple Burning
+Section 1.10 - Burning
+
+A thing can be flammable or impervious. A thing is usually impervious.
+A thing can be lighting or unlighting.  A thing is usually unlighting.
+
+Section 1.10.1 - Lighting Objects
+
+Instead of burning a lit lighting object:
+	say "The [noun] is already lit."
+
+Understand "blow out [something]" as blowing out. Understand "blow [something] out" as blowing out. Blowing out is an action applying to one thing.
+
+Carry out blowing out a lighting object:
+	now the noun is unlit.
+
+Report blowing out a thing:
+	if the thing was lit, say "You blow out [the noun].";
+	otherwise say "You blow on [the noun], to little effect."
+
+Section 1.10.2 - Simple Burning 
 
 Understand the commands "light" and "burn" as something new.
 
@@ -154,25 +173,25 @@ Understand "burn [something] with [strikable-match]" as burning it with. Underst
 
 Understand the command "light" as "burn".
 
-A thing can be flammable or impervious. A thing is usually impervious.
-
 Check burning something with something (this is the burn only with flaming matches rule):
 	if the second noun is not a strikable-match, say "You can only light things with matches." instead;
 	if the second noun is not flaming, say "[The second noun] needs to be burning first." instead.
 
 Check burning something with something (this is the burn only flammable things rule):
-	if the noun is impervious, say "[The noun] cannot be burned." instead.
+	if the noun is unlighting and the noun is impervious, say "[The noun] cannot be burned." instead.
 
-Check burning something with something (this is the burn only things not held rule):
+Check burning an unlighting thing with something (this is the burn only things not held rule):
 	say "[one of]It occurs to you to set down [the noun] before burning, just for safety's sake. [or]Again, you decide to put down [the noun] prior to burning. [or]You try setting down [the noun] as usual. [stopping][run paragraph on]";
 	silently try the player dropping the noun;
 	if the player encloses the noun, stop the action.
 
 Carry out burning something with something (this is the simplistic burning rule):
-	now the noun is nowhere.
+	if the noun is not a lighting object, now the noun is nowhere;
+	if the noun is a lighting thing, now the noun is lit.
 
 Report burning something with something:
-	say "You burn up [the noun]."
+	if the noun is an unlighting thing, say "You burn up [the noun].";
+	otherwise say "You light up [the noun].".
 
 Rule for implicitly taking the second noun while burning something with something which is not a strikable-match:
 	say "You can only light things with matches.";
@@ -322,7 +341,7 @@ Wooden chair is a chair.  Wooden chair is in Porch.
 
 Old box is a container. Old box is in Porch.
 
-candle is a unlit thing. string is a thing. bucket is a container.
+candle is an unlit lighting thing. string is a thing. bucket is a container.
 candle, string are in Old box.
 
 bucket is in Porch.
@@ -412,7 +431,7 @@ hammer, screw, screwdriver are in the tool box.
 
 Section 3.11 - Kitchen
 
-The matchbox is a container with carrying capacity 10. 
+The matchbox is a closed and openable container with carrying capacity 10. 
 10 s-matches are in the matchbox.
 
 The red cabinet is a cabinet. The red cabinet is in the Main Kitchen.
