@@ -439,9 +439,11 @@ garage is a dark room. The light switch is a switched off device in the garage. 
 After deciding the scope of the player when the location is the garage:
 	place the light switch in scope.
 
-Carry out switching off the light switch: now the garage is dark.
-
-Carry out switching on the light switch: now the garage is lighted.
+Report switching off the light switch:
+	say "Nothing happens, there is no lights".
+	
+Report switching on the light switch:
+	say "Nothing happens, there is no lights".	
 
 A tool box is a transparent locked container. The tool box is in garage.
 
@@ -569,4 +571,4 @@ Being Inside the House ends when player is in Second Floor.
 
 chapter 7 - Inicio
 
-Player is in the Porch.
+Player is in the porch.
