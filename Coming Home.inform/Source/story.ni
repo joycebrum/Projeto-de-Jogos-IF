@@ -73,7 +73,6 @@ A drain is a kind of container. A drain is part of every sink. Understand "plugh
 
 Instead of inserting something into a drain (this is the no clogging drains rule), say "Pointless."
 
-A cabinet is in every kitchen.
 A counter is in every kitchen.
 A refrigerator is in every kitchen.
 A sink is in every kitchen.
@@ -141,6 +140,142 @@ There are four plates on the table.
 
 There are four chairs in the Dining room.
 
+Section 1.9 - Switching devices
+
+Understand "turn on [something switched off]" as switching on. Understand "turn off  [something switched on]" as switching off.
+
+Understand "flip [something switched off]" as switching on. Understand "flip [something switched on]" as switching off. Understand "flip [something]" as switching on.
+
+Section 1.10 - Simple Burning
+
+Understand the commands "light" and "burn" as something new.
+
+Understand "burn [something] with [strikable-match]" as burning it with. Understand "burn [something] with [something preferably held]" as burning it with. Burning it with is an action applying to one thing and one carried thing.
+
+Understand the command "light" as "burn".
+
+A thing can be flammable or impervious. A thing is usually impervious.
+
+Check burning something with something (this is the burn only with flaming matches rule):
+	if the second noun is not a strikable-match, say "You can only light things with matches." instead;
+	if the second noun is not flaming, say "[The second noun] needs to be burning first." instead.
+
+Check burning something with something (this is the burn only flammable things rule):
+	if the noun is impervious, say "[The noun] cannot be burned." instead.
+
+Check burning something with something (this is the burn only things not held rule):
+	say "[one of]It occurs to you to set down [the noun] before burning, just for safety's sake. [or]Again, you decide to put down [the noun] prior to burning. [or]You try setting down [the noun] as usual. [stopping][run paragraph on]";
+	silently try the player dropping the noun;
+	if the player encloses the noun, stop the action.
+
+Carry out burning something with something (this is the simplistic burning rule):
+	now the noun is nowhere.
+
+Report burning something with something:
+	say "You burn up [the noun]."
+
+Rule for implicitly taking the second noun while burning something with something which is not a strikable-match:
+	say "You can only light things with matches.";
+	stop the action.
+
+Section 1.11 - Matches
+
+A strikable-match is a kind of thing. The plural of strikable-match is s-matches.
+
+A strikable-match has a number called duration. The duration of a strikable-match is usually 3.
+
+Rule for printing the name of a strikable-match: say "match".
+Rule for printing the plural name of a strikable-match: say "matches".
+
+Understand "match" as a strikable-match. Understand "matches" as a strikable-match.
+
+Flame-state is a kind of value. The flame-states are burnt, flaming, and new. Understand "burning" or "lit" as flaming. Understand "unused" as new.
+
+A strikable-match has a flame-state. A strikable-match is usually new. Understand the flame-state property as describing a strikable-match.
+
+Before printing the name of a strikable-match while asking which do you mean:
+	say "[flame-state] ".
+
+Before printing the name of a strikable-match while taking inventory:
+	say "[flame-state] ".
+Before printing the plural name of a strikable-match while taking inventory:
+	say "[flame-state] ".
+
+Before printing the name of a strikable-match while clarifying the parser's choice of something:
+	if not taking inventory, say "[flame-state] ".
+
+After printing the name of a strikable-match (called special-target) while clarifying the parser's choice of something:
+	if the player carries the special-target:
+		say " you're carrying";
+	otherwise if the special-target is in the location:
+		say " on the ground";
+	otherwise:
+		say " [if the holder of the special-target is a container]in[otherwise]on[end if] [the holder of the special-target]".
+
+Understand "strike [something]" as attacking.
+
+Understand "strike [strikable-match]" as striking. Striking is an action applying to one carried thing.
+
+Understand "burn [strikable-match]" as striking.
+
+Does the player mean striking a new strikable-match:
+	it is very likely.
+
+Does the player mean striking a burnt strikable-match:
+	it is unlikely.
+
+Check striking a strikable-match (this is the strike only new matches rule):
+	if the noun is burnt, say "[The noun] has already burnt down and cannot be relit." instead;
+	if the noun is flaming, say "[The noun] is already burning." instead.
+
+Carry out striking a strikable-match (this is the standard striking rule):
+	now the noun is flaming;
+	now the noun is lit.
+
+Report striking a strikable-match (this is the standard report striking rule):
+	say "You light [the noun]."
+
+Before burning something with a new strikable-match (this is the prior lighting rule):
+	say "(first [if the player does not carry the second noun]taking and [end if]lighting [the second noun])[command clarification break]";
+	silently try striking the second noun;
+	if the second noun is not flaming, stop the action.
+
+Rule for implicitly taking a strikable-match (called target) while striking:
+	try silently taking the target.
+
+Does the player mean burning something with a flaming strikable-match:
+	it is very likely.
+
+Does the player mean burning something with a new strikable-match:
+	it is likely.
+
+Does the player mean burning something with a burnt strikable-match:
+	it is unlikely.
+
+Instead of burning a burnt strikable-match with something:
+	say "[The noun] is completely consumed and cannot be relit."
+	
+Section 1.12 - Putting the Matches Out
+
+Every turn:
+	let N be 0; [here we track how many matches are being put out during this turn, so that we don't have to mention each match individually if several go out during the same move]
+	repeat with item running through flaming s-matches:
+		decrement the duration of the item;
+		if the duration of the item is 0:
+			now the item is burnt;
+			now the item is unlit;
+			if the item is visible, increment N;
+	if N is 1:
+		say "[if the number of visible flaming s-matches is greater than 0]One of the matches [otherwise if the number of burnt visible s-matches is greater than 1]Your last burning match [otherwise]The match [end if]goes out.";
+	otherwise if N is greater than 1:
+		let enumeration be "[N in words]";
+		if N is the number of visible s-matches:
+			if N is two, say "Both";
+			otherwise say "All [enumeration]";
+		otherwise:
+			say "[enumeration in title case]";
+		say " matches go out[if a visible strikable-match is flaming], leaving [number of visible flaming s-matches in words] still lit[end if]."
+
 Chapter 2 Geography
 
 Section 2.1 The House
@@ -152,7 +287,7 @@ Main door is a door. It is north of Porch and south of Hall. Main door is closed
 The matching key of the Main door is Main key.
 
 Living Room is a room. "The living room is huge and clean. There are some pictures on the wall showing a very serious and not friendly family: the mom, the dad and their little girl. The three of them seem to be very rich and unpleased.". Living room is north of Hall.
-Garage is a room. "The Garage seems not being used regularly and it is very dark.". Garage is west of Living Room.
+Garage is a room. "The Garage seems not being used regularly. There are no windows and the main door are closed. There are no car in here too.". Garage is west of Living Room.
 Main Kitchen is a kitchen. "The main kitchen has one cabinet with a sink and one refrigerator, and, on the opposite wall, a counter and one stove" .  Main Kitchen is north of garage.
 Dining Room is a room. Dining room is east of Main Kitchen. Dining Room is north of Living Room.
 Home Office is a room."In the Home Office you can see a desk and a bookshelf. There is also a computer on the desk." Home Office is east of Living Room.
@@ -187,7 +322,7 @@ Wooden chair is a chair.  Wooden chair is in Porch.
 
 Old box is a container. Old box is in Porch.
 
-candle is a thing. string is a thing. bucket is a container.
+candle is a unlit thing. string is a thing. bucket is a container.
 candle, string are in Old box.
 
 bucket is in Porch.
@@ -230,36 +365,10 @@ The small wardrobe is a closed wardrobe. The small wardrobe is in small bedroom.
 
 Carlie is a person. "Carlie, a little girl, is sitted on the bed looking at you. She looked very happy to see you". Carlie is in the small bedroom.
 
-After saying hello to Carlie, say "'Hello little girl.', you say.
-
-	'Hello! I am Carlie! I'm so happy that now I have someone to play with'.".
-
-After quizzing Carlie about Carlie, say "'Who are you? Did you live here?', you ask.
-
-'Ah, yeah, this is my house. Mama and Papa are not at home but I can take care of the house by myself. I am Carlie Whinehouse', she answers proudly.".
-
-After asking Carlie about "treasure", say "'Do you know where could be a treasure in this house?', you ask. 
-
-	'Treasure? Ah, I have a treasure. Marly, my little doll is so beautiful and funny. She is perfect, just like a treasure. But...', her eyes filled with water. She was about to cry 'I don't know where Marly is. She is my favourite doll and... and... I lost her'."
-
-After asking Carlie about "dead":
-	say "'Are you dead?', you ask.
-
-	She stares at you and, suddenly, she starts to cry. You try to confort her but she just keeps repeating 'I'm not dead. I'm not a ghost. Mama... Papa...'.
-	
-	Just as sudden as she started to cry, she looks at you and say: 'YOU ARE THE ONE WHO ARE DEAD NOW'.
-
-	She runs into you and everything become dark.";
-	end the story saying "You have died".
-Instead of asking Carlie about "her death", try asking Carlie about "dead".
-Instead of asking Carlie about "death", try asking Carlie about "dead".
-
 Section 3.9 - Home Office
 
 The office table is a fixed in place supporter. It is scenery. The office table is in the Home Office.
 The computer is a switched off device. It is scenery. The computer is on the office table.
-
-Understand "turn on [something switched off]" as switching on. Understand "turn off  [something switched on]" as switching off.
 
 Computer Note Seen is a truth state that varies.
 Third Book Seen is a truth state that varies.
@@ -294,14 +403,20 @@ Carry out switching off the light switch: now the garage is dark.
 
 Carry out switching on the light switch: now the garage is lighted.
 
-Understand "flip [something switched off]" as switching on. Understand "flip [something switched on]" as switching off. Understand "flip [something]" as switching on.
-
 A tool box is a transparent locked container. The tool box is in garage.
 
 Understand "box" as a tool box.
 
 hammer is a thing. screw is a thing. screwdriver is a thing.
 hammer, screw, screwdriver are in the tool box.
+
+Section 3.11 - Kitchen
+
+The matchbox is a container with carrying capacity 10. 
+10 s-matches are in the matchbox.
+
+The red cabinet is a cabinet. The red cabinet is in the Main Kitchen.
+The matchbox is in the red cabinet.
 
 Chapter 4 Dialogs
 
@@ -367,6 +482,31 @@ Check an actor giving a thing to Max:
 	if the noun is the flower, say "Max smile and accept the flower. He put it in his pocket and then say: 'Its a beautiful flower, thank you.'";
 	if the noun is not the flower, say "Max doesn't seem interested." instead.
 	
+Section 4.2 Carlie
+
+After saying hello to Carlie, say "'Hello little girl.', you say.
+
+	'Hello! I am Carlie! I'm so happy that now I have someone to play with'.".
+
+After quizzing Carlie about Carlie, say "'Who are you? Did you live here?', you ask.
+
+'Ah, yeah, this is my house. Mama and Papa are not at home but I can take care of the house by myself. I am Carlie Whinehouse', she answers proudly.".
+
+After asking Carlie about "treasure", say "'Do you know where could be a treasure in this house?', you ask. 
+
+	'Treasure? Ah, I have a treasure. Marly, my little doll is so beautiful and funny. She is perfect, just like a treasure. But...', her eyes filled with water. She was about to cry 'I don't know where Marly is. She is my favourite doll and... and... I lost her'."
+
+After asking Carlie about "dead":
+	say "'Are you dead?', you ask.
+
+	She stares at you and, suddenly, she starts to cry. You try to confort her but she just keeps repeating 'I'm not dead. I'm not a ghost. Mama... Papa...'.
+	
+	Just as sudden as she started to cry, she looks at you and say: 'YOU ARE THE ONE WHO ARE DEAD NOW'.
+
+	She runs into you and everything become dark.";
+	end the story saying "You have died".
+Instead of asking Carlie about "her death", try asking Carlie about "dead".
+Instead of asking Carlie about "death", try asking Carlie about "dead".	
 
 Chapter 5 What Happens when entering
 
