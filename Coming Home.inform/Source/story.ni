@@ -329,7 +329,7 @@ The matching key of the Home office door is second key.
 
 Garage is a room. "The Garage seems not being used regularly. There are no windows and the main door are closed. There are no car in here too.".
 
-Garage door is a door. It is west of Living Room and east of Garage. Garage door is closed and locked.
+Garage door is a door. It is scenery. It is west of Living Room and east of Garage. Garage door is closed and locked.
 The matching key of the Garage door is Garage key.
 
 Main Kitchen is a kitchen. "The main kitchen has one cabinet with a sink and one refrigerator, and, on the opposite wall, a counter and one stove" .  Main Kitchen is north of garage.
@@ -435,6 +435,7 @@ book 2 is on the shelf. The description is "A parenting book.". It is a book wit
 book 3 is on the shelf. The description is "Margareth's diary". It is a book with printing "'... she is our daughter, but this is the only way to save her. I am going to put the poison on her food, and she won't even feel anything. I wish there was another w...'[line break]The rest is blurred by what looks like water drops.".
 book 4 is on the shelf. The description is "A detective book". It is a book with printing "You read the story of a detective solving a crime.".
 book 5 is on the shelf. The description is "A psychology book.". It is a book with printing "You read about clinical depression.".
+Understand "Margareth's diary", "diary" as book 3.
 
 The book 1, book 2, book 3, book 4, book 5, the office table are flammable.
 
@@ -458,7 +459,7 @@ Spinning it to is an action applying to one thing and one number. Check spinning
 
 Understand "spin [something] to [a number]" as spinning it to.
 
-After spinning the closed Safe to 1384: 
+After spinning the closed Safe to 1306: 
 		now the Safe is open; 
 		say "Clonk! and the safe door swings slowly open, revealing [a list of things in the Safe].
 
@@ -486,6 +487,12 @@ Understand "box" as a tool box.
 
 hammer is a thing. screw is a thing. screwdriver is a thing.
 hammer, screw, screwdriver are in the tool box.
+
+the medallion is a closed and openable container. The medallion is impervious closed. The medallion is in the garage.
+the photo is a impervious thing. The photo is in the medallion. 
+
+Rule for printing the name of the photo: say "photo. It is a photo of what seems to be the owners of the house in their weddind. There is the date 13/06 wrote in it.".
+
 
 Section 3.11 - Kitchen
 
@@ -555,7 +562,7 @@ The block giving rule is not listed in the check giving it to rules
 
 Check an actor giving a thing to Max:
 	if the noun is the flower, say "Max smile and accept the flower. He put it in his pocket and then say: 'Its a beautiful flower, thank you.'";
-	if the noun is not the flower, say "Max doesn't seem interested." instead.
+	otherwise say "Max doesn't seem interested." instead.
 	
 Section 4.2 Carlie
 
