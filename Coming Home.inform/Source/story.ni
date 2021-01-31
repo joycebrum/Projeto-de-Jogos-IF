@@ -6,6 +6,11 @@ Chapter 1 New Kinds
 
 Inclusion relates a thing (called X) to a thing (called Y) when Y is part of X. The verb to include means the inclusion relation.
 
+Section 1.0 - Variables
+
+Max Approval is a truth state that varies.
+Carlie Approval is a truth state that varies.
+
 Section 1.1 The Staircase
 
 A staircase is a kind of door. A staircase is usually open. A staircase is seldom openable. A staircase is scenery.
@@ -318,7 +323,7 @@ Living Room is a room. "The living room is huge and clean. There are some pictur
 
 Home Office is a room."In the Home Office you can see a desk and a bookshelf. There is also a computer on the desk."
 
-Home office door is a door. It is east of Living Room and west of Home Office. Home office door is closed and locked.
+Home office door is a door. It is scenery. It is east of Living Room and west of Home Office. Home office door is closed and locked.
 The matching key of the Home office door is Home office key.
 
 
@@ -440,8 +445,27 @@ can full of coins is on shelf.
 Report taking the can full of coins:
 	say "The can seems to have something bigger than a coin inside".
 
-There is a chair in the Home Office. It is scenery.
+There is a flammable chair in the Home Office. It is scenery.
 
+The Safe is a container. The Safe is closed and fixed in place. Understand "dial" as the Safe. The Safe is in the Home Office. "You can see a safe in here, with a dial which can spin to any number. It seems to be a very heavy.".
+In the Safe is a diamond necklace.
+
+Spinning it to is an action applying to one thing and one number. Check spinning it to: if the noun is not the Safe, say "[The noun] does not spin." instead. Report spinning it to: say "Click! and nothing else happens."
+
+Understand "spin [something] to [a number]" as spinning it to.
+
+After spinning the closed Safe to 1384: 
+	[if Carlie Approval is true:]
+		now the Safe is open; 
+		say "Clonk! and the safe door swings slowly open, revealing [a list of things in the Safe].
+
+		You've found your treasure, congratulations.
+
+		You leave the house feeling that, even though you had some difficulties, you have no regrets on dealing with those two ghosts. Somehow, when you step out of the house, you feel that they are no longer in there. They have left to better place and you are rich.";
+		end the story saying "You won.".
+		
+[	if Max Approval is false: say "Max kill you"; end the story saying "You have died".
+	if Carlie Approval is false: say "Carlie kill you"; end the story saying "You have died".]
 Section 3.10 Garage
 
 
@@ -476,8 +500,6 @@ The matchbox is in the red cabinet.
 Chapter 4 Dialogs
 
 Section 4.1 Max
-
-Max Approval is a truth state that varies.
 
 After saying hello to max, say "'Hello, friend', you say.
 
