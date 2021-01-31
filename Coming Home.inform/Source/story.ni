@@ -309,6 +309,7 @@ Every turn:
 			say "[enumeration in title case]";
 		say " matches go out[if a visible strikable-match is flaming], leaving [number of visible flaming s-matches in words] still lit[end if]."
 
+
 Chapter 2 Geography
 
 Section 2.1 The House
@@ -467,8 +468,23 @@ After spinning the closed Safe to 1306:
 		
 Section 3.10 Garage
 
+The Chest is a container. The Chest is closed and fixed in place. Understand "keybord" as the Chest. The Chest is in the garage. "You see a very old chest with the name Carlie written in it. It has a small keybord which makes you believe it was locked and it can only be open if you type the correct password".
 
-the doll is a thing. the doll is in garage.
+the doll is a thing.
+
+In the Chest is the doll, a dress, a teddy bear, a sketchbook and a princess crown.
+doll, dress, teddy bear, sketchbook are flammable.
+
+Understand "type [a number] on [something]" as typing it on.
+Typing it on is an action applying to one number and one thing. 
+
+Check typing it on: if the second noun is not the Chest, say "There is no keybord for you to type it on" instead. 
+
+Report typing it on: say "You hear a sound of failure coming from the keybord and nothing else happens.".
+
+After typing 2401 on the Chest:
+	now the chest is open;
+	say "A good sound comes from the keybord and the chest opens, revealing [a list of things in the Chest].". 
 
 garage is a dark room. The light switch is a switched off device in the garage. It is fixed in place.
 
