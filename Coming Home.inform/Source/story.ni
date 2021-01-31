@@ -1,4 +1,4 @@
-"O tesouro esquecido" by Thiago Outeiro, Joyce brum, João Pedro and Flávio Sousa
+"The forgotten treasure" by Thiago Outeiro, Joyce brum, João Pedro and Flávio Sousa
 
 Include Conversation Framework by Eric Eve.
 
@@ -98,6 +98,9 @@ A bath is a kind of container. A bath is usually fixed in place and enterable an
 A sink is in every bathroom.
 A toilet is in every bathroom.
 A cabinet is in every bathroom.
+
+report opening a cabinet:
+	say "You can se some cleaning products".
 
 Section 1.6 Home Office
 
@@ -519,14 +522,14 @@ Report switching off the light switch:
 Report switching on the light switch:
 	say "Nothing happens, there is no lights".	
 
-A tool box is a transparent locked container. The tool box is in garage.
+A tool box is a locked container. The tool box is in garage.
 
 Understand "box" as a tool box.
 
 hammer is a thing. screw is a thing. screwdriver is a thing.
 hammer, screw, screwdriver are in the tool box.
 
-the medallion is a closed and openable container. The medallion is impervious closed. The medallion is in the garage.
+the medallion is a closed and openable container. The medallion is impervious closed. The medallion is in the Inner Bathroom.
 the photo is a impervious thing. The photo is in the medallion. 
 
 Rule for printing the name of the photo: say "photo. It is a photo of what seems to be the owners of the house in their weddind. There is the date 13/06 wrote in it.".
@@ -565,7 +568,7 @@ After saying hello to max, say "'Hello, friend', you say.
 After quizzing Max about Max: 
 	say "'Humm... who are you my friend?', you ask.
 	
-	'I am Max and I work here for mister and misters Whinehouse', Max answers.".
+	'I am Max and I work here for mister and misters Whinehouse. Or I use to work a long time ago, before I... .', Max answers and stare to nothing.".
 After asking Max about "the house":
 	say "'What do you know about this house? Is this your house?', you ask.
 
