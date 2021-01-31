@@ -545,10 +545,16 @@ After asking Max about "the house":
 	
 Instead of asking Max about "house", try asking Max about "the house".
 
-After asking Max about "treasure", say "'Do you know where could be a treasure in this house?', you ask. 
+After asking Max about "treasure",:
+	if Max Aproval is false:
+		say "'Do you know where could be a treasure in this house?', you ask. 
 
-He stares at you and he, for the first time, is not smiling anymore.
-'I suggest you go away, sir. This house is under my responsability and I certainly will not allow you to take anything.', he answers."
+		He stares at you and he, for the first time, is not smiling anymore.
+		'I suggest you go away, sir. This house is under my responsability and I certainly will not allow you to take anything.', he answers."
+	otherwise:
+		say "'Do you know where could be a treasure in this house?', you ask. 
+		
+		'You was capable of find the truth about my death. I'm sure you can handle to find a litlle treasure my friend.'He answers "
 
 Instead of asking Max about "the treasure", try asking Max about "treasure".
 
