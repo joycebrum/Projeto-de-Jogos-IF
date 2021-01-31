@@ -516,6 +516,16 @@ The tinderbox is an open container with carrying capacity 10.
 The red cabinet is a cabinet. The red cabinet is in the Main Kitchen.
 The tinderbox is in the red cabinet.
 
+The garbage basket is a closed and openable container. The garbage basket is in the Main Kitchen.
+The poison is a container. Rule for printing the name of the poison: say "bottle (a small bottle with a liquid inside)".
+Understand "bottle" as the poison.
+The poison is in the garbage basket.
+
+Instead of drinking the poison:
+	say "That was dumb.";
+	end the story saying "You have died.".
+
+
 Chapter 4 Dialogs
 
 Section 4.1 Max
