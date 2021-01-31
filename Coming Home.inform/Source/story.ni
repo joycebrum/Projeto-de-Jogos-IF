@@ -738,14 +738,14 @@ Chapter 8 - Inicio
 Player is in the hall.
 
 When play begins: 
-	say "[bold type]Introdução:[roman type]
+	say "[bold type]Introduction:[roman type]
 	
-	Voce se encontra em frente a uma casa há muito tempo abandonada no meio da floresta, as janelas estào quebradas, mas eh possível ver que seus moveis la dentro estão intactos.
+	You are in a long time abandoned house, in the middle of the forest. Its windows are broken but it is possible for you to see that some of its furnitures are intact inside.
+
+	You heard some rumors saying that this house is haunted, but it holds a very awesome treasure.
 	
-	Muitos rumores dizem que esta casa é assombarada, mas que guarda um tesouro incrivel.
-	
-	Muitos caçadores de tesouros ja se aventuraram nesta casa, alguns nunca sairam de lá, e os que sairam, nunca falaram uma palavra sobre ela.
-	
-	Voce está decidido a provar que é o maior caçador de tesouros de todos e encontrar esse tesouro. 
-	
-	Vejamos se voce consegue.".
+	A lot of treasure hunters tried their best adventuring in this house. Some never get out of there and those who left have never spoken a word about it.
+
+	You are confident that you will be the one who will find the treasure and prove, to everyone, that you are the greatest treasure hunter in the world.
+
+	Let us see if you are right...".
