@@ -735,7 +735,7 @@ Check going to Porch during Running out the house:
 
 Chapter 8 - Inicio
 
-Player is in the hall.
+Player is in the porch.
 
 When play begins: 
 	say "[bold type]Introduction:[roman type]
