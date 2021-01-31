@@ -462,9 +462,7 @@ Understand "spin [something] to [a number]" as spinning it to.
 
 After spinning the closed Safe to 1306: 
 		now the Safe is open; 
-		say "Clonk! and the safe door swings slowly open, revealing [a list of things in the Safe].
-
-		You've found your treasure, congratulations. Now you just have get the hell out of here. It will be easy... right?"
+		say "Clonk! and the safe door swings slowly open, revealing [a list of things in the Safe]."
 		
 Section 3.10 Garage
 
@@ -632,10 +630,13 @@ After quizzing Carlie about Max, say "'That man downstairs... do you know him, r
 The block giving rule is not listed in the check giving it to rules.
 
 Check an actor giving a thing to Carlie:
-	if the noun is the doll, say "She looks at the doll with tears in her eyes, but she seems very happy. She taked the doll from you and hugged it very tigh.
+	if the noun is the doll: 
+		say "She looks at the doll with tears in her eyes, but she seems very happy. She taked the doll from you and hugged it very tigh.
 
 	'You are REALLY my best friend. You find my treasure. Thanks!', she says.";
-	otherwise say "Carlie doesn't seem interested." instead.
+		now Carlie Approval is true;
+	Otherwise: 
+		say "Carlie doesn't seem interested." instead; 
 	
 Chapter 5 What Happens when entering
 
@@ -653,7 +654,9 @@ Being Inside the House begins when player is in First Floor.
 Being Inside the House ends when player has the diamond necklace.
 
 Before taking the diamond necklace during Being Inside the House:
-	Say "A chill runs up your spine".
+	Say "You've found your treasure, congratulations. Now you just have get the hell out of here. It will be easy... right?
+	
+	A chill runs up your spine".
 
 
 Chapter 7 Running out the house
@@ -663,10 +666,13 @@ Running out the house begins when player has the diamond necklace.
 Running out the house ends when player is in Porch.
 
 Check going west when player is carrying the diamond necklace during Running out the house:
-	if Max Approval is false, say "You heard Max on your left looking at you. He is still smiling but his eyes show you that he is not happy at all. He is scary. He says 'Dear guest, I'm afraid that you are no worth of anything in this house. So you can't no longer stay.'.";
-	if Carlie Approval is false, say "On your right you [if Max Approval is false]also [end if]heard Carlie crying. She looks at you and she seems to be mad. 'Now that you have your treasure you are leaving right. I can't let you. I'll be alone. You have to stay here FOREVER!', she says. ";
-	say "Then everything goes dark";
-	end the story saying "You have died".
+	if Max Approval is false:
+		 say "You heard Max on your left looking at you. He is still smiling but his eyes show you that he is not happy at all. He is scary. He says 'Dear guest, I'm afraid that you are no worth of anything in this house. So you can't no longer stay.'.";
+	if Carlie Approval is false: 
+		say "On your right you [if Max Approval is false]also [end if]heard Carlie crying. She looks at you and she seems to be mad. 'Now that you have your treasure you are leaving right. I can't let you. I'll be alone. You have to stay here FOREVER!', she says.";
+	if Max Approval is false or Carlie Approval is false: 
+		say "Then everything goes dark";
+		end the story saying "You have died".
 	
 Check going to Porch during Running out the house:
 	say "You leave the house feeling that, even though you had some difficulties, you have no regrets on dealing with those two ghosts. 
