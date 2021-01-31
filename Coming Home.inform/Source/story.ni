@@ -552,6 +552,14 @@ After informing Max about the book 3:
 
 	'I always tried the food before give it to miss Whinehouse, to know if it is too salty or sweety. That was enough to kill me, what it seems. Thank you, my friend. You can't imagine how much weight you just take off my back', he answers with relief";
 	now Max Approval is true.
+Instead of telling Max about "the truth", try informing Max about the book 3.
+Instead of telling Max about "truth", try informing Max about the book 3.
+Instead of telling Max about "death", try informing Max about the book 3.
+Instead of telling Max about "dead", try informing Max about the book 3.
+Instead of telling Max about "his death", try informing Max about the book 3.
+Instead of telling Max about "Carlie's death", try informing Max about the book 3.
+Instead of telling Max about "poison", try informing Max about the book 3.
+Instead of telling Max about "the poison", try informing Max about the book 3.
 	
 After quizzing Max about Carlie, say "'That little girl upstairs... do you know her?', you ask.
 
