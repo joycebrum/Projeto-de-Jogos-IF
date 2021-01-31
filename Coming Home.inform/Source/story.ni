@@ -63,7 +63,7 @@ Report switching off a tap (this is the standard report switching taps off rule)
 After examining something which includes a switched on tap (called relevant tap) (this is the report flowing water rule):
 	say "The water is flowing from [the relevant tap]."
 	
-A cabinet is a kind of container. A cabinet is usually openable and closed. It is scenery.
+A cabinet is a kind of fixed in place container. A cabinet is usually openable and closed.
 	Understand "cupboard" or "cupboards" or "cabinets" as a cabinet.
 
 A counter is a kind of supporter. It is scenery.
@@ -369,7 +369,7 @@ bucket is in Porch.
 
 Section 3.2 On the Hall
 
-Max is a person. "Max, who is a very thin and midium-aged man dressed as a buttler, is standing in front of you. He stares at you with a smile.".
+Max is a man. "Max, who is a very thin and midium-aged man dressed as a buttler, is standing in front of you. He stares at you with a smile.".
 Max is in Hall.
 
 Section 3.3 On the Living Room
@@ -406,7 +406,7 @@ Carlie Approval is a truth state that varies.
 
 The small wardrobe is a closed wardrobe. The small wardrobe is in small bedroom.
 
-Carlie is a person. "Carlie, a little girl, is sitted on the bed looking at you. She looked very happy to see you". Carlie is in the small bedroom.
+Carlie is a woman. "Carlie, a little girl, is sitted on the bed looking at you. She looked very happy to see you". Carlie is in the small bedroom.
 
 Section 3.9 - Home Office
 
@@ -516,11 +516,11 @@ After informing Max about the book 3:
 
 	Max looked at you with disbelif.
 
-	'That can't be true... she's loved little miss Whinehosue. Of course that miss Whinehouse was sick and she had little time to live, but she couldn't have done this. It was me. I'm sure that I used something spoiled and...', he answers.
+	'That can't be true... she's loved little miss Whinehosue. Of course that miss Whinehouse was always sick and demanded a lot of attention, but she couldn't have done this. It was me. I'm sure that I used something spoiled and...', he answers.
 
 	'It wouldn't be enough. Just spoiled food wouldn't kill you both. She did it to miss Whinehouse. But how it killed you?', you intervenied.
 
-	'I always tried the food before give it to miss Whinehouse, to know if it is too salty or sweet. That was enough to kill me, what it seems. Thank you, my friend. You can't imagine how much weight you just take off my back', he answers with relief";
+	'I always tried the food before give it to miss Whinehouse, to know if it is too salty or sweety. That was enough to kill me, what it seems. Thank you, my friend. You can't imagine how much weight you just take off my back', he answers with relief";
 	now Max Approval is true.
 	
 After quizzing Max about Carlie, say "'That little girl upstairs... do you know her?', you ask.
@@ -536,6 +536,8 @@ Check an actor giving a thing to Max:
 	
 Section 4.2 Carlie
 
+the doll is a thing. the doll is in small bedroom.
+
 After saying hello to Carlie, say "'Hello little girl.', you say.
 
 	'Hello! I am Carlie! I'm so happy that now I have someone to play with'.".
@@ -544,9 +546,14 @@ After quizzing Carlie about Carlie, say "'Who are you? Did you live here?', you 
 
 'Ah, yeah, this is my house. Mama and Papa are not at home but I can take care of the house by myself. I am Carlie Whinehouse', she answers proudly.".
 
-After asking Carlie about "treasure", say "'Do you know where could be a treasure in this house?', you ask. 
+After asking Carlie about "treasure": 
+	if Carlie has the doll, say "'Now you could tell me where are the treasure?', you ask.
 
-	'Treasure? Ah, I have a treasure. Marly, my little doll is so beautiful and funny. She is perfect, just like a treasure. But...', her eyes filled with water. She was about to cry 'I don't know where Marly is. She is my favourite doll and... and... I lost her'."
+	'Well... You help me to find my treasure so maybe I can help you with yours. Mama and Papa has a very huge safe in their office. I'm sure they keep a treasure there.', she says";
+	otherwise say "'Do you know where could be a treasure in this house?', you ask. 
+
+	'Treasure? Ah, I have a treasure. Marly, my little doll is so beautiful and funny. She is perfect, just like a treasure. But...', her eyes filled with water. She was about to cry 'I don't know where Marly is. She is my favourite doll and... and... I lost her'.".
+Instead of asking Carlie about "the treasure", try asking Carlie about "treasure".
 	
 After asking Carlie about "age", say "'How old are you Carlie?', you ask.
 
@@ -563,7 +570,20 @@ After asking Carlie about "dead":
 	end the story saying "You have died".
 Instead of asking Carlie about "her death", try asking Carlie about "dead".
 Instead of asking Carlie about "death", try asking Carlie about "dead".	
+Instead of asking Carlie about "being dead", try asking Carlie about "dead".
 
+After quizzing Carlie about Max, say "'That man downstairs... do you know him, right?', you ask. 
+
+	'Of course I know. He is Max and he is very careful with me. He always tastes my food to know if it is too salty or sweety, even though mama and papa say he is spoiling me', she answers, laughing".
+	
+The block giving rule is not listed in the check giving it to rules.
+
+Check an actor giving a thing to Carlie:
+	if the noun is the doll, say "She looks at the doll with tears in her eyes, but she seems very happy. She taked the doll from you and hugged it very tigh.
+
+	'You are REALLY my best friend. You find my treasure. Thanks!', she says.";
+	otherwise say "Carlie doesn't seem interested." instead.
+	
 Chapter 5 What Happens when entering
 
 Being Outside the House is a Scene. 
