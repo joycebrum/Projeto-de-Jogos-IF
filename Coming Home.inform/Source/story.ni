@@ -362,7 +362,7 @@ Stairs is a staircase. It is above Hall and below Upper Hall.
 [Segundo andar] 
 Upper Hall is a room. "You can see a door in every direction, and in one corner you can see the stairs down to the Hall.
 
-In the corner betwen the north and east door, you can see a litlle corner table, with a lampshade and a container with dead flowers.". 
+In the corner betwen the north and east door, you can see a litlle corner table, with a lampshade and a container with dead flowers. 
 
 On the side of the stair, you can see a map of the house in a frame". 
 Large Bedroom is a bedroom. "This seems to be the bedroom of the owner of the house. There is some pictures on the wall and a red carpet in the center of the room. There is an inner room on the west.
