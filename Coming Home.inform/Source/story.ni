@@ -2,6 +2,10 @@
 
 Include Conversation Framework by Eric Eve.
 
+Figure of first floor is the file "1floor.png".
+Figure of second floor is the file "2floor.png".
+
+
 Chapter 1 New Kinds
 
 Inclusion relates a thing (called X) to a thing (called Y) when Y is part of X. The verb to include means the inclusion relation.
@@ -308,6 +312,19 @@ Every turn:
 		otherwise:
 			say "[enumeration in title case]";
 		say " matches go out[if a visible strikable-match is flaming], leaving [number of visible flaming s-matches in words] still lit[end if]."
+		
+Section 1.13 - look
+
+Understand the command "look" as something new.
+looking to is an action applying to one thing.
+Understand "look to [something]" as looking to.
+understand "see the [something]" as looking to.
+
+check an actor looking to a thing:
+	if the noun is the first floor map:
+		display the Figure of first floor;
+	if the noun is the second floor map:
+		display the Figure of second floor.
 
 
 Chapter 2 Geography
@@ -315,7 +332,9 @@ Chapter 2 Geography
 Section 2.1 The House
 
 Porch is a room. "The porche is not very large but has a very beautiful garden. The main door leads inside the house".  
-Hall is room.  "You are in an empty hall. There is a stair that leads to the second door. You can see doors on north and east, leading to other rooms."
+Hall is room.  "You are in an empty hall. There is a stair that leads to the second door. You can see doors on north and east, leading to other rooms.
+
+On the left side of the door you can see a map in a frame.".
 
 Main door is a door. It is north of Porch and south of Hall. Main door is closed and locked.
 The matching key of the Main door is first key.
@@ -344,6 +363,8 @@ Stairs is a staircase. It is above Hall and below Upper Hall.
 Upper Hall is a room. "You can see a door in every direction, and in one corner you can see the stairs down to the Hall.
 
 In the corner betwen the north and east door, you can see a litlle corner table, with a lampshade and a container with dead flowers.". 
+
+On the side of the stair, you can see a map of the house in a frame". 
 Large Bedroom is a bedroom. "This seems to be the bedroom of the owner of the house. There is some pictures on the wall and a red carpet in the center of the room. There is an inner room on the west.
 
 The bed is a double bed and is very large.". Large Bedroom is north of Upper Hall.
@@ -378,6 +399,9 @@ Section 3.2 On the Hall
 Max is a man. "Max, who is a very thin and midium-aged man dressed as a buttler, is standing in front of you. He stares at you with a smile.".
 Max is in Hall.
 
+The first floor map is a thing. 
+the first floor map is in the hall.
+
 Section 3.3 On the Living Room
 
 The red couch is a fixed in place chair. It is in the Living Room. The red couch is flammable.
@@ -388,12 +412,6 @@ The flower is a thing. "a very beautiful red flower, which is not dead yet". The
 Section 3.4 On the Upper Bathroom
 
 The inner bathtub is a bath. The inner bathtub is in Inner Bathroom.
-the medallion is a closed and openable container. The medallion is impervious closed. The medallion is in the Inner Bathroom.
-the photo is a impervious thing. The photo is in the medallion. 
-
-Rule for printing the name of the photo: say "photo. It is a photo of what seems to be the owners of the house in their weddind. There is the date 13/06 wrote in it.".
-
-
 The white bathtub is a bath. The white bathtub is in Upper Bathroom.
 
 Section 3.5 - Large Bedroom
@@ -508,6 +526,12 @@ Understand "box" as a tool box.
 hammer is a thing. screw is a thing. screwdriver is a thing.
 hammer, screw, screwdriver are in the tool box.
 
+the medallion is a closed and openable container. The medallion is impervious closed. The medallion is in the garage.
+the photo is a impervious thing. The photo is in the medallion. 
+
+Rule for printing the name of the photo: say "photo. It is a photo of what seems to be the owners of the house in their weddind. There is the date 13/06 wrote in it.".
+
+
 Section 3.11 - Kitchen
 
 The tinderbox is an open container with carrying capacity 10. 
@@ -524,7 +548,11 @@ The poison is in the garbage basket.
 Instead of drinking the poison:
 	say "That was dumb.";
 	end the story saying "You have died.".
+	
+Section 3.12 - upper hall
 
+The second floor map is a thing.
+The second floor map is in the upper hall.
 
 Chapter 4 Dialogs
 
@@ -561,11 +589,7 @@ Instead of asking Max about "the treasure", try asking Max about "treasure".
 After asking Max about "dead", say "'Are you really dead?', you ask.
 
 'Yes, I've died a long time ago. Don't ask me how, because I can't remember', he answer, but he doesn't seem being honest.".
-
 Instead of asking Max about "his dead", try asking Max about "dead".
-Instead of asking Max about "death", try asking Max about "dead".
-Instead of asking Max about "his death", try asking Max about "dead".
-Instead of asking Max about "being dead", try asking Max about "dead".
 
 After quizzing Max about the computer:
 	if Computer Note Seen is true, say "'Do you know about that note on the computer?', you ask.
@@ -592,23 +616,9 @@ Instead of telling Max about "death", try informing Max about the book 3.
 Instead of telling Max about "dead", try informing Max about the book 3.
 Instead of telling Max about "his death", try informing Max about the book 3.
 Instead of telling Max about "Carlie's death", try informing Max about the book 3.
-
-After informing Max about the poison:
-	if Third Book Seen is true:
-		say "'Max, I'm afraid I know what happened. There is a poison on the kitchen's garbage basket and I'm pretty sure that it was used by Misters Whinehouse. I saw the her diary and she tried to kill her own daughter with poison. I don't know why, but she seemed to believe that this was the only way' 
-		
-		'Misters Whinehouse?! But... even if little miss Whinehouse was always sick and demanded a lot of attention, I can't believe she could just kill her daughter...'
-
-		'But she did it. But how it killed you?', you intervenied.
-
-		'I always tried the food before give it to miss Whinehouse, to know if it is too salty or sweety. That was enough to kill me, what it seems. Thank you, my friend. You can't imagine how much weight you just take off my back', he answers with relief";
-		now Max Approval is true;
-	Otherwise:
-		say "'Max, I found something odd in the kitchen's garbage basket. It could be a poison or something. Maybe it could be what has killed you.', you say. It seems to get Max attention.
-
-		'A p-poison?! But how... I mean, who? Who would want to poison little miss Whinehouse? Ah, even if it is true and someone tried to poison her, it's my fault. I am the only one responsible for letting suspicious people get into the house', he answers, looking at you in a weird way.".
-Instead of quizzing Max about the poison, try informing Max about the poison.
-
+Instead of telling Max about "poison", try informing Max about the book 3.
+Instead of telling Max about "the poison", try informing Max about the book 3.
+	
 After quizzing Max about Carlie, say "'That little girl upstairs... do you know her?', you ask.
 
 	'Ah, little miss Whinehouse... she is so sweet and lovely. How could I be so displiscent... If I was more careful, she wouldn't be dead now.... forget about it, it is just an old man regreting his past.', he answers";
@@ -725,7 +735,7 @@ Check going to Porch during Running out the house:
 
 Chapter 8 - Inicio
 
-Player is in the porch.
+Player is in the hall.
 
 When play begins: 
 	say "[bold type]Introdução:[roman type]
