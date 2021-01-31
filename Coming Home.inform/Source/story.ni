@@ -1,4 +1,4 @@
-"Coming Home" by Geraldo
+"O tesouro esquecido" by Thiago Outeiro, Joyce brum
 
 Include Conversation Framework by Eric Eve.
 
@@ -444,6 +444,9 @@ There is a chair in the Home Office. It is scenery.
 
 Section 3.10 Garage
 
+
+the doll is a thing. the doll is in garage.
+
 garage is a dark room. The light switch is a switched off device in the garage. It is fixed in place.
 
 After deciding the scope of the player when the location is the garage:
@@ -536,8 +539,6 @@ Check an actor giving a thing to Max:
 	
 Section 4.2 Carlie
 
-the doll is a thing. the doll is in small bedroom.
-
 After saying hello to Carlie, say "'Hello little girl.', you say.
 
 	'Hello! I am Carlie! I'm so happy that now I have someone to play with'.".
@@ -602,3 +603,16 @@ Being Inside the House ends when player is in Second Floor.
 chapter 7 - Inicio
 
 Player is in the porch.
+
+When play begins: 
+	say "[bold type]Introdução:[roman type]
+	
+	Voce se encontra em frente a uma casa a muito tempo abandonada no meio da floresta, as janelas estào quebradas, mas eh possível ver que seus moveis la dentro estão intactos.
+	
+	Muitos rumores dizem que esta casa é assombarada, mas que guarda um tesouro incrivel.
+	
+	Muitos caçadores de tesouros ja se aventuraram nesta casa, alguns nunca sairam de lá, e os que sairam, nunca falaram uma palavra sobre ela.
+	
+	Voce está decidido a provar que é o maior caçador de tesouros de todos e encontrar esse tesouro. 
+	
+	Vejamos se voce consegue.".
