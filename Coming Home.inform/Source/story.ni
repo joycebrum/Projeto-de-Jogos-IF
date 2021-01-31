@@ -480,7 +480,7 @@ Check typing it on: if the second noun is not the Chest, say "There is no keybor
 
 Report typing it on: say "You hear a sound of failure coming from the keybord and nothing else happens.".
 
-After typing 2401 on the Chest:
+After typing 2211 on the Chest:
 	now the chest is open;
 	say "A good sound comes from the keybord and the chest opens, revealing [a list of things in the Chest].". 
 
@@ -622,6 +622,15 @@ Instead of asking Carlie about "her death", try asking Carlie about "dead".
 Instead of asking Carlie about "death", try asking Carlie about "dead".	
 Instead of asking Carlie about "being dead", try asking Carlie about "dead".
 Instead of telling Carlie about something, try asking Carlie about it.
+
+After asking Carlie about "important number":
+	say "'Carlie you have some number you like, or some important number?'
+	
+	'Hmm... OH!!, I love the number of my birthay, is 22/11, is like 4 numbers, but have just 2' she laught and seems to be very happy".
+Instead of asking Carlie about "number", try asking Carlie about "important number".
+Instead of asking Carlie about "numbers", try asking Carlie about "important number".
+Instead of asking Carlie about "important numbers", try asking Carlie about "important number".
+Instead of asking Carlie about "password", try asking Carlie about "important number".
 
 After quizzing Carlie about Max, say "'That man downstairs... do you know him, right?', you ask. 
 
