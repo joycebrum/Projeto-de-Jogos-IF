@@ -631,13 +631,13 @@ Running out the house is a Scene.
 Running out the house begins when player has the diamond necklace.
 Running out the house ends when player is in Porch.
 
-Check going west during Running out the house:
+Check going west when player is carrying the diamond necklace during Running out the house:
 	if Max Approval is false, say "You heard Max on your left looking at you. He is still smiling but his eyes show you that he is not happy at all. He is scary. He says 'Dear guest, I'm afraid that you are no worth of anything in this house. So you can't no longer stay.'.";
 	if Carlie Approval is false, say "On your right you [if Max Approval is false]also [end if]heard Carlie crying. She looks at you and she seems to be mad. 'Now that you have your treasure you are leaving right. I can't let you. I'll be alone. You have to stay here FOREVER!', she says. ";
 	say "Then everything goes dark";
 	end the story saying "You have died".
 	
-Before player is in Porch during Running out the house:
+Check going to Porch during Running out the house:
 	say "You leave the house feeling that, even though you had some difficulties, you have no regrets on dealing with those two ghosts. 
 
 	Somehow, when you step out of the house, you feel that they are no longer in there. They have left to a better place, since there is nothing holding them here anymore. And you are rich.";
