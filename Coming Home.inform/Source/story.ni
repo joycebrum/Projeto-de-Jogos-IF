@@ -1,4 +1,4 @@
-"O tesouro esquecido" by Thiago Outeiro, Joyce brum
+"O tesouro esquecido" by Thiago Outeiro, Joyce brum, João Pedro and Flávio Sousa
 
 Include Conversation Framework by Eric Eve.
 
@@ -200,7 +200,7 @@ Carry out burning something with something (this is the simplistic burning rule)
 
 		'I'm afraid I can't no longer allow you to stay', he says.
 
-		Then everything become darkness.";
+		Then everything goes dark.";
 		end the story saying "You have died".
 
 Report burning something with something:
@@ -317,20 +317,20 @@ Porch is a room. "The porche is not very large but has a very beautiful garden. 
 Hall is room.  "You are in an empty hall. There is a stair that leads to the second door. You can see doors on north and east, leading to other rooms."
 
 Main door is a door. It is north of Porch and south of Hall. Main door is closed and locked.
-The matching key of the Main door is Main key.
+The matching key of the Main door is first key.
 
 Living Room is a room. "The living room is huge and clean. There are some pictures on the wall showing a very serious and not friendly family: the mom, the dad and their little girl. The three of them seem to be very rich and unpleased.". Living room is north of Hall.
 
 Home Office is a room."In the Home Office you can see a desk and a bookshelf. There is also a computer on the desk."
 
 Home office door is a door. It is scenery. It is east of Living Room and west of Home Office. Home office door is closed and locked.
-The matching key of the Home office door is Home office key.
+The matching key of the Home office door is second key.
 
 
 Garage is a room. "The Garage seems not being used regularly. There are no windows and the main door are closed. There are no car in here too.".
 
 Garage door is a door. It is west of Living Room and east of Garage. Garage door is closed and locked.
-The matching key of theGarage door is Garage key.
+The matching key of the Garage door is Garage key.
 
 Main Kitchen is a kitchen. "The main kitchen has one cabinet with a sink and one refrigerator, and, on the opposite wall, a counter and one stove" .  Main Kitchen is north of garage.
 Dining Room is a room. Dining room is east of Main Kitchen. Dining Room is north of Living Room.
@@ -357,8 +357,8 @@ Second Floor is a region. The Upper Hall, The Large Bedroom, the medium bedroom,
 
 Chapter 3 Things
 
-Main key is in the old box.
-Home Office key is in the bottom drawer.
+first key is in the old box.
+second key is in the bottom drawer.
 Garage key is in the can full of coins.
 
 Section 3.1 On the Porch
@@ -391,12 +391,16 @@ The white bathtub is a bath. The white bathtub is in Upper Bathroom.
 
 Section 3.5 - Large Bedroom
 
-The parents wardrobe is a wardrobe. "The wardrobe is open, and you can see a lot of clothes on the ground, seens like someone took everything in a hurry.
+The parents wardrobe is a wardrobe. "The wardrobe is open, and you can see a lot of clothes on the ground, seems like someone took everything in a hurry.
 
 The wardrobe has two drawers.". The parents wardrobe is in large bedroom. The parents wardrobe is open.
 
 The top drawer is a drawer. The top drawer is part of parents wardrobe.
+Understand "first drawer" as the top drawer.
+
 The bottom drawer is a drawer. The bottom drawer is part of parents wardrobe.
+Understand "second drawer" as the bottom drawer.
+
 After opening the top drawer, say "You see inside the drawer a broken picture frame with a photo of a young girl".
 
 After opening the bottom drawer, say "You see inside the drawer a key".
@@ -455,17 +459,11 @@ Spinning it to is an action applying to one thing and one number. Check spinning
 Understand "spin [something] to [a number]" as spinning it to.
 
 After spinning the closed Safe to 1384: 
-	[if Carlie Approval is true:]
 		now the Safe is open; 
 		say "Clonk! and the safe door swings slowly open, revealing [a list of things in the Safe].
 
-		You've found your treasure, congratulations.
-
-		You leave the house feeling that, even though you had some difficulties, you have no regrets on dealing with those two ghosts. Somehow, when you step out of the house, you feel that they are no longer in there. They have left to better place and you are rich.";
-		end the story saying "You won.".
+		You've found your treasure, congratulations. Now you just have get the hell out of here. It will be easy... right?"
 		
-[	if Max Approval is false: say "Max kill you"; end the story saying "You have died".
-	if Carlie Approval is false: say "Carlie kill you"; end the story saying "You have died".]
 Section 3.10 Garage
 
 
@@ -491,11 +489,11 @@ hammer, screw, screwdriver are in the tool box.
 
 Section 3.11 - Kitchen
 
-The matchbox is a closed and openable container with carrying capacity 10. 
-10 s-matches are in the matchbox.
+The tinderbox is an open container with carrying capacity 10. 
+10 s-matches are in the tinderbox.
 
 The red cabinet is a cabinet. The red cabinet is in the Main Kitchen.
-The matchbox is in the red cabinet.
+The tinderbox is in the red cabinet.
 
 Chapter 4 Dialogs
 
@@ -589,11 +587,12 @@ After asking Carlie about "dead":
 	
 	Just as sudden as she started to cry, she looks at you and say: 'YOU ARE THE ONE WHO ARE DEAD NOW'.
 
-	She runs into you and everything become dark.";
+	She runs into you and everything goes dark.";
 	end the story saying "You have died".
 Instead of asking Carlie about "her death", try asking Carlie about "dead".
 Instead of asking Carlie about "death", try asking Carlie about "dead".	
 Instead of asking Carlie about "being dead", try asking Carlie about "dead".
+Instead of telling Carlie about something, try asking Carlie about it.
 
 After quizzing Carlie about Max, say "'That man downstairs... do you know him, right?', you ask. 
 
@@ -613,23 +612,45 @@ Being Outside the House is a Scene.
 Being Outside the House begins when play begins.
 Being Outside the House ends when player is in Hall.
 
-Before taking the Main Key during Being Outside the House:
+Before taking the first key during Being Outside the House:
 	Say "A chill runs up your spine".
 
 Chapter 6 Inside the house
 
 Being Inside the House is a Scene.
 Being Inside the House begins when player is in First Floor.
-Being Inside the House ends when player is in Second Floor.
+Being Inside the House ends when player has the diamond necklace.
 
-chapter 7 - Inicio
+Before taking the diamond necklace during Being Inside the House:
+	Say "A chill runs up your spine".
+
+
+Chapter 7 Running out the house
+
+Running out the house is a Scene.
+Running out the house begins when player has the diamond necklace.
+Running out the house ends when player is in Porch.
+
+Check going west during Running out the house:
+	if Max Approval is false, say "You heard Max on your left looking at you. He is still smiling but his eyes show you that he is not happy at all. He is scary. He says 'Dear guest, I'm afraid that you are no worth of anything in this house. So you can't no longer stay.'.";
+	if Carlie Approval is false, say "On your right you [if Max Approval is false]also [end if]heard Carlie crying. She looks at you and she seems to be mad. 'Now that you have your treasure you are leaving right. I can't let you. I'll be alone. You have to stay here FOREVER!', she says. ";
+	say "Then everything goes dark";
+	end the story saying "You have died".
+	
+Before player is in Porch during Running out the house:
+	say "You leave the house feeling that, even though you had some difficulties, you have no regrets on dealing with those two ghosts. 
+
+	Somehow, when you step out of the house, you feel that they are no longer in there. They have left to a better place, since there is nothing holding them here anymore. And you are rich.";
+	end the story saying "You won.".
+
+Chapter 8 - Inicio
 
 Player is in the porch.
 
 When play begins: 
 	say "[bold type]Introdução:[roman type]
 	
-	Voce se encontra em frente a uma casa a muito tempo abandonada no meio da floresta, as janelas estào quebradas, mas eh possível ver que seus moveis la dentro estão intactos.
+	Voce se encontra em frente a uma casa há muito tempo abandonada no meio da floresta, as janelas estào quebradas, mas eh possível ver que seus moveis la dentro estão intactos.
 	
 	Muitos rumores dizem que esta casa é assombarada, mas que guarda um tesouro incrivel.
 	
