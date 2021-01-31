@@ -334,7 +334,7 @@ Garage door is a door. It is scenery. It is west of Living Room and east of Gara
 The matching key of the Garage door is Garage key.
 
 Main Kitchen is a kitchen. "The main kitchen has one cabinet with a sink and one refrigerator, and, on the opposite wall, a counter and one stove" .
-Dining Room is a room. Dining room is east of Main Kitchen. Dining Room is north of Living Room.
+Dining Room is a room. "The dinning room is a huge room with simple furnitures. There is a room on the west and another on the south.".Dining room is east of Main Kitchen. Dining Room is north of Living Room.
 Lavabo is a bathroom. "The Lavabo is a very small toilet and it seems that it is not being used for decades.
 
 It has a cabinet with a sink right on the left of the door and a toilet on the other side.". Lavabo is east of Hall.
@@ -344,7 +344,7 @@ Stairs is a staircase. It is above Hall and below Upper Hall.
 Upper Hall is a room. "You can see a door in every direction, and in one corner you can see the stairs down to the Hall.
 
 In the corner betwen the north and east door, you can see a litlle corner table, with a lampshade and a container with dead flowers.". 
-Large Bedroom is a bedroom. "This seems to be the bedroom of the owner of the house. There is some pictures on the wall and a red carpet in the center of the room. 
+Large Bedroom is a bedroom. "This seems to be the bedroom of the owner of the house. There is some pictures on the wall and a red carpet in the center of the room. There is an inner room on the west.
 
 The bed is a double bed and is very large.". Large Bedroom is north of Upper Hall.
 Medium Bedroom is a a bedroom."This room looks like a guest room, but is empty, just with the basic furniture.
